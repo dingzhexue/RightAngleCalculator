@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EC7BD9FF1FA39A6F00E8F1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BD9FE1FA39A6F00E8F1C1 /* AppDelegate.swift */; };
+		EC7BDA011FA39A6F00E8F1C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA001FA39A6F00E8F1C1 /* ViewController.swift */; };
+		EC7BDA041FA39A6F00E8F1C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDA021FA39A6F00E8F1C1 /* Main.storyboard */; };
+		EC7BDA061FA39A6F00E8F1C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDA051FA39A6F00E8F1C1 /* Assets.xcassets */; };
+		EC7BDA091FA39A6F00E8F1C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDA071FA39A6F00E8F1C1 /* LaunchScreen.storyboard */; };
+		EC7BDA141FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA131FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift */; };
+		EC7BDA1F1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA1E1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift */; };
+		EC7BDA401FA411A200E8F1C1 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA3F1FA411A200E8F1C1 /* TriangleView.swift */; };
+		EC7BDA421FA411CB00E8F1C1 /* TriangleLengthsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA411FA411CB00E8F1C1 /* TriangleLengthsView.swift */; };
+		EC7BDA441FA411E100E8F1C1 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA431FA411E100E8F1C1 /* Triangle.swift */; };
+		EC7BDA461FA411FA00E8F1C1 /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA451FA411FA00E8F1C1 /* Length.swift */; };
+		EC7BDA481FA4122100E8F1C1 /* TriangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA471FA4122100E8F1C1 /* TriangleCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC7BDA101FA39A7000E8F1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC7BD9F31FA39A6F00E8F1C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7BD9FA1FA39A6F00E8F1C1;
+			remoteInfo = RightAngleCalculator;
+		};
+		EC7BDA1B1FA39A7000E8F1C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC7BD9F31FA39A6F00E8F1C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC7BD9FA1FA39A6F00E8F1C1;
+			remoteInfo = RightAngleCalculator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EC7BD9FB1FA39A6F00E8F1C1 /* RightAngleCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightAngleCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7BD9FE1FA39A6F00E8F1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EC7BDA001FA39A6F00E8F1C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EC7BDA031FA39A6F00E8F1C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC7BDA051FA39A6F00E8F1C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC7BDA081FA39A6F00E8F1C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC7BDA0A1FA39A6F00E8F1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7BDA0F1FA39A7000E8F1C1 /* RightAngleCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RightAngleCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7BDA131FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightAngleCalculatorTests.swift; sourceTree = "<group>"; };
+		EC7BDA151FA39A7000E8F1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7BDA1A1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RightAngleCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7BDA1E1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightAngleCalculatorUITests.swift; sourceTree = "<group>"; };
+		EC7BDA201FA39A7000E8F1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7BDA2F1FA39BE400E8F1C1 /* logoWords.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoWords.png; sourceTree = "<group>"; };
+		EC7BDA301FA39BE400E8F1C1 /* Icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon80.png; sourceTree = "<group>"; };
+		EC7BDA311FA39BE400E8F1C1 /* CalculateBurtton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CalculateBurtton.png; sourceTree = "<group>"; };
+		EC7BDA321FA39BE400E8F1C1 /* LaunchImage_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage_4.png; sourceTree = "<group>"; };
+		EC7BDA361FA39BE500E8F1C1 /* Icon58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon58.png; sourceTree = "<group>"; };
+		EC7BDA381FA39BE500E8F1C1 /* Icon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon1024.png; sourceTree = "<group>"; };
+		EC7BDA391FA39BE500E8F1C1 /* LaunchImage_3_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage_3_5.png; sourceTree = "<group>"; };
+		EC7BDA3A1FA39BE500E8F1C1 /* PreviousButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PreviousButton.png; sourceTree = "<group>"; };
+		EC7BDA3B1FA39BE500E8F1C1 /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = "<group>"; };
+		EC7BDA3D1FA39BE500E8F1C1 /* ClearButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ClearButton.png; sourceTree = "<group>"; };
+		EC7BDA3F1FA411A200E8F1C1 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		EC7BDA411FA411CB00E8F1C1 /* TriangleLengthsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleLengthsView.swift; sourceTree = "<group>"; };
+		EC7BDA431FA411E100E8F1C1 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		EC7BDA451FA411FA00E8F1C1 /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
+		EC7BDA471FA4122100E8F1C1 /* TriangleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC7BD9F81FA39A6F00E8F1C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7BDA0C1FA39A7000E8F1C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7BDA171FA39A7000E8F1C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EC7BD9F21FA39A6F00E8F1C1 = {
+			isa = PBXGroup;
+			children = (
+				EC7BDA2C1FA39B8E00E8F1C1 /* Image */,
+				EC7BD9FD1FA39A6F00E8F1C1 /* RightAngleCalculator */,
+				EC7BDA121FA39A7000E8F1C1 /* RightAngleCalculatorTests */,
+				EC7BDA1D1FA39A7000E8F1C1 /* RightAngleCalculatorUITests */,
+				EC7BD9FC1FA39A6F00E8F1C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EC7BD9FC1FA39A6F00E8F1C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC7BD9FB1FA39A6F00E8F1C1 /* RightAngleCalculator.app */,
+				EC7BDA0F1FA39A7000E8F1C1 /* RightAngleCalculatorTests.xctest */,
+				EC7BDA1A1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC7BD9FD1FA39A6F00E8F1C1 /* RightAngleCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				EC7BD9FE1FA39A6F00E8F1C1 /* AppDelegate.swift */,
+				EC7BDA001FA39A6F00E8F1C1 /* ViewController.swift */,
+				EC7BDA3F1FA411A200E8F1C1 /* TriangleView.swift */,
+				EC7BDA411FA411CB00E8F1C1 /* TriangleLengthsView.swift */,
+				EC7BDA431FA411E100E8F1C1 /* Triangle.swift */,
+				EC7BDA451FA411FA00E8F1C1 /* Length.swift */,
+				EC7BDA471FA4122100E8F1C1 /* TriangleCell.swift */,
+				EC7BDA021FA39A6F00E8F1C1 /* Main.storyboard */,
+				EC7BDA051FA39A6F00E8F1C1 /* Assets.xcassets */,
+				EC7BDA071FA39A6F00E8F1C1 /* LaunchScreen.storyboard */,
+				EC7BDA0A1FA39A6F00E8F1C1 /* Info.plist */,
+			);
+			path = RightAngleCalculator;
+			sourceTree = "<group>";
+		};
+		EC7BDA121FA39A7000E8F1C1 /* RightAngleCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7BDA131FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift */,
+				EC7BDA151FA39A7000E8F1C1 /* Info.plist */,
+			);
+			path = RightAngleCalculatorTests;
+			sourceTree = "<group>";
+		};
+		EC7BDA1D1FA39A7000E8F1C1 /* RightAngleCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC7BDA1E1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift */,
+				EC7BDA201FA39A7000E8F1C1 /* Info.plist */,
+			);
+			path = RightAngleCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		EC7BDA2C1FA39B8E00E8F1C1 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EC7BDA311FA39BE400E8F1C1 /* CalculateBurtton.png */,
+				EC7BDA3D1FA39BE500E8F1C1 /* ClearButton.png */,
+				EC7BDA361FA39BE500E8F1C1 /* Icon58.png */,
+				EC7BDA301FA39BE400E8F1C1 /* Icon80.png */,
+				EC7BDA3B1FA39BE500E8F1C1 /* Icon120.png */,
+				EC7BDA381FA39BE500E8F1C1 /* Icon1024.png */,
+				EC7BDA391FA39BE500E8F1C1 /* LaunchImage_3_5.png */,
+				EC7BDA321FA39BE400E8F1C1 /* LaunchImage_4.png */,
+				EC7BDA2F1FA39BE400E8F1C1 /* logoWords.png */,
+				EC7BDA3A1FA39BE500E8F1C1 /* PreviousButton.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC7BD9FA1FA39A6F00E8F1C1 /* RightAngleCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7BDA231FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculator" */;
+			buildPhases = (
+				EC7BD9F71FA39A6F00E8F1C1 /* Sources */,
+				EC7BD9F81FA39A6F00E8F1C1 /* Frameworks */,
+				EC7BD9F91FA39A6F00E8F1C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RightAngleCalculator;
+			productName = RightAngleCalculator;
+			productReference = EC7BD9FB1FA39A6F00E8F1C1 /* RightAngleCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC7BDA0E1FA39A7000E8F1C1 /* RightAngleCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7BDA261FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculatorTests" */;
+			buildPhases = (
+				EC7BDA0B1FA39A7000E8F1C1 /* Sources */,
+				EC7BDA0C1FA39A7000E8F1C1 /* Frameworks */,
+				EC7BDA0D1FA39A7000E8F1C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7BDA111FA39A7000E8F1C1 /* PBXTargetDependency */,
+			);
+			name = RightAngleCalculatorTests;
+			productName = RightAngleCalculatorTests;
+			productReference = EC7BDA0F1FA39A7000E8F1C1 /* RightAngleCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC7BDA191FA39A7000E8F1C1 /* RightAngleCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC7BDA291FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculatorUITests" */;
+			buildPhases = (
+				EC7BDA161FA39A7000E8F1C1 /* Sources */,
+				EC7BDA171FA39A7000E8F1C1 /* Frameworks */,
+				EC7BDA181FA39A7000E8F1C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC7BDA1C1FA39A7000E8F1C1 /* PBXTargetDependency */,
+			);
+			name = RightAngleCalculatorUITests;
+			productName = RightAngleCalculatorUITests;
+			productReference = EC7BDA1A1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC7BD9F31FA39A6F00E8F1C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = ShenYang;
+				TargetAttributes = {
+					EC7BD9FA1FA39A6F00E8F1C1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					EC7BDA0E1FA39A7000E8F1C1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC7BD9FA1FA39A6F00E8F1C1;
+					};
+					EC7BDA191FA39A7000E8F1C1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EC7BD9FA1FA39A6F00E8F1C1;
+					};
+				};
+			};
+			buildConfigurationList = EC7BD9F61FA39A6F00E8F1C1 /* Build configuration list for PBXProject "RightAngleCalculator" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC7BD9F21FA39A6F00E8F1C1;
+			productRefGroup = EC7BD9FC1FA39A6F00E8F1C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC7BD9FA1FA39A6F00E8F1C1 /* RightAngleCalculator */,
+				EC7BDA0E1FA39A7000E8F1C1 /* RightAngleCalculatorTests */,
+				EC7BDA191FA39A7000E8F1C1 /* RightAngleCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC7BD9F91FA39A6F00E8F1C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7BDA091FA39A6F00E8F1C1 /* LaunchScreen.storyboard in Resources */,
+				EC7BDA061FA39A6F00E8F1C1 /* Assets.xcassets in Resources */,
+				EC7BDA041FA39A6F00E8F1C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7BDA0D1FA39A7000E8F1C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7BDA181FA39A7000E8F1C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC7BD9F71FA39A6F00E8F1C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7BDA011FA39A6F00E8F1C1 /* ViewController.swift in Sources */,
+				EC7BDA461FA411FA00E8F1C1 /* Length.swift in Sources */,
+				EC7BDA481FA4122100E8F1C1 /* TriangleCell.swift in Sources */,
+				EC7BDA401FA411A200E8F1C1 /* TriangleView.swift in Sources */,
+				EC7BDA441FA411E100E8F1C1 /* Triangle.swift in Sources */,
+				EC7BDA421FA411CB00E8F1C1 /* TriangleLengthsView.swift in Sources */,
+				EC7BD9FF1FA39A6F00E8F1C1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7BDA0B1FA39A7000E8F1C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7BDA141FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC7BDA161FA39A7000E8F1C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7BDA1F1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC7BDA111FA39A7000E8F1C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7BD9FA1FA39A6F00E8F1C1 /* RightAngleCalculator */;
+			targetProxy = EC7BDA101FA39A7000E8F1C1 /* PBXContainerItemProxy */;
+		};
+		EC7BDA1C1FA39A7000E8F1C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC7BD9FA1FA39A6F00E8F1C1 /* RightAngleCalculator */;
+			targetProxy = EC7BDA1B1FA39A7000E8F1C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC7BDA021FA39A6F00E8F1C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7BDA031FA39A6F00E8F1C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC7BDA071FA39A6F00E8F1C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC7BDA081FA39A6F00E8F1C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC7BDA211FA39A7000E8F1C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EC7BDA221FA39A7000E8F1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC7BDA241FA39A7000E8F1C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RightAngleCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EC7BDA251FA39A7000E8F1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RightAngleCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EC7BDA271FA39A7000E8F1C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RightAngleCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RightAngleCalculator.app/RightAngleCalculator";
+			};
+			name = Debug;
+		};
+		EC7BDA281FA39A7000E8F1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RightAngleCalculatorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RightAngleCalculator.app/RightAngleCalculator";
+			};
+			name = Release;
+		};
+		EC7BDA2A1FA39A7000E8F1C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RightAngleCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RightAngleCalculator;
+			};
+			name = Debug;
+		};
+		EC7BDA2B1FA39A7000E8F1C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RightAngleCalculatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RightAngleCalculator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC7BD9F61FA39A6F00E8F1C1 /* Build configuration list for PBXProject "RightAngleCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7BDA211FA39A7000E8F1C1 /* Debug */,
+				EC7BDA221FA39A7000E8F1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7BDA231FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7BDA241FA39A7000E8F1C1 /* Debug */,
+				EC7BDA251FA39A7000E8F1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7BDA261FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7BDA271FA39A7000E8F1C1 /* Debug */,
+				EC7BDA281FA39A7000E8F1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC7BDA291FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC7BDA2A1FA39A7000E8F1C1 /* Debug */,
+				EC7BDA2B1FA39A7000E8F1C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC7BD9F31FA39A6F00E8F1C1 /* Project object */;
+}
