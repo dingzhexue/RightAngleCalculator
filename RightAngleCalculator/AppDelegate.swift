@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  RightAngleCalculator
 //
-//  Created by 123 on 10/27/17.
-//  Copyright © 2017 ShenYang. All rights reserved.
+//  Created by admin on 10/27/17.
 //
 
 import UIKit

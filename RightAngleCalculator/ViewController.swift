@@ -2,8 +2,7 @@
 //  ViewController.swift
 //  RightAngleCalculator
 //
-//  Created by 123 on 10/27/17.
-//  Copyright © 2017 ShenYang. All rights reserved.
+//  Created by admin on 10/27/17.
 //
 
 import UIKit
@@ -161,7 +160,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     func drawTriangle(){
         self.showTriangle()
 
-        let triangleSize:Float = 150
+        let triangleSize:Float = 200
 
         // scale triangle so largest leg has appropriate length
         let largestLegLength:Double = max(mainTriangle.legA,mainTriangle.legB)
@@ -171,8 +170,8 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
 
         // Determine origin for triangle
         let vSpace:Float = Float(self.view.frame.size.height) - 30 - calcButtonBottom
-        let hSpace:Float = 320
-        let origin:CGPoint = CGPoint(x:Double(hSpace)/2.0 - mainTriangle.legB*scale/2.0+20,
+        let hSpace:Float = 375
+        let origin:CGPoint = CGPoint(x:Double(hSpace)/2.0 - mainTriangle.legB*scale/2.0,
                                      y:Double(calcButtonBottom) + Double(vSpace)/2.0 + mainTriangle.legA*scale/2.0)
 
         //////////////
