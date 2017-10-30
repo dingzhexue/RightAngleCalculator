@@ -39,17 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC7BD9FB1FA39A6F00E8F1C1 /* RightAngleCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightAngleCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7BD9FB1FA39A6F00E8F1C1 /* CarpenterSquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarpenterSquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7BD9FE1FA39A6F00E8F1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC7BDA001FA39A6F00E8F1C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EC7BDA031FA39A6F00E8F1C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC7BDA051FA39A6F00E8F1C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC7BDA081FA39A6F00E8F1C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC7BDA0A1FA39A6F00E8F1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC7BDA0F1FA39A7000E8F1C1 /* RightAngleCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RightAngleCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7BDA0F1FA39A7000E8F1C1 /* CarpenterSquareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarpenterSquareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7BDA131FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightAngleCalculatorTests.swift; sourceTree = "<group>"; };
 		EC7BDA151FA39A7000E8F1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC7BDA1A1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RightAngleCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC7BDA1A1FA39A7000E8F1C1 /* CarpenterSquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarpenterSquareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC7BDA1E1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightAngleCalculatorUITests.swift; sourceTree = "<group>"; };
 		EC7BDA201FA39A7000E8F1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC7BDA2F1FA39BE400E8F1C1 /* logoWords.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoWords.png; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				EC7BDA2C1FA39B8E00E8F1C1 /* Image */,
-				EC7BD9FD1FA39A6F00E8F1C1 /* RightAngleCalculator */,
+				EC7BD9FD1FA39A6F00E8F1C1 /* CarpenterSquare */,
 				EC7BDA121FA39A7000E8F1C1 /* RightAngleCalculatorTests */,
 				EC7BDA1D1FA39A7000E8F1C1 /* RightAngleCalculatorUITests */,
 				EC7BD9FC1FA39A6F00E8F1C1 /* Products */,
@@ -108,14 +108,14 @@
 		EC7BD9FC1FA39A6F00E8F1C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC7BD9FB1FA39A6F00E8F1C1 /* RightAngleCalculator.app */,
-				EC7BDA0F1FA39A7000E8F1C1 /* RightAngleCalculatorTests.xctest */,
-				EC7BDA1A1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.xctest */,
+				EC7BD9FB1FA39A6F00E8F1C1 /* CarpenterSquare.app */,
+				EC7BDA0F1FA39A7000E8F1C1 /* CarpenterSquareTests.xctest */,
+				EC7BDA1A1FA39A7000E8F1C1 /* CarpenterSquareUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC7BD9FD1FA39A6F00E8F1C1 /* RightAngleCalculator */ = {
+		EC7BD9FD1FA39A6F00E8F1C1 /* CarpenterSquare */ = {
 			isa = PBXGroup;
 			children = (
 				EC7BD9FE1FA39A6F00E8F1C1 /* AppDelegate.swift */,
@@ -130,7 +130,7 @@
 				EC7BDA071FA39A6F00E8F1C1 /* LaunchScreen.storyboard */,
 				EC7BDA0A1FA39A6F00E8F1C1 /* Info.plist */,
 			);
-			path = RightAngleCalculator;
+			path = CarpenterSquare;
 			sourceTree = "<group>";
 		};
 		EC7BDA121FA39A7000E8F1C1 /* RightAngleCalculatorTests */ = {
@@ -171,9 +171,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC7BD9FA1FA39A6F00E8F1C1 /* RightAngleCalculator */ = {
+		EC7BD9FA1FA39A6F00E8F1C1 /* CarpenterSquare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC7BDA231FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculator" */;
+			buildConfigurationList = EC7BDA231FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquare" */;
 			buildPhases = (
 				EC7BD9F71FA39A6F00E8F1C1 /* Sources */,
 				EC7BD9F81FA39A6F00E8F1C1 /* Frameworks */,
@@ -183,14 +183,14 @@
 			);
 			dependencies = (
 			);
-			name = RightAngleCalculator;
+			name = CarpenterSquare;
 			productName = RightAngleCalculator;
-			productReference = EC7BD9FB1FA39A6F00E8F1C1 /* RightAngleCalculator.app */;
+			productReference = EC7BD9FB1FA39A6F00E8F1C1 /* CarpenterSquare.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC7BDA0E1FA39A7000E8F1C1 /* RightAngleCalculatorTests */ = {
+		EC7BDA0E1FA39A7000E8F1C1 /* CarpenterSquareTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC7BDA261FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculatorTests" */;
+			buildConfigurationList = EC7BDA261FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquareTests" */;
 			buildPhases = (
 				EC7BDA0B1FA39A7000E8F1C1 /* Sources */,
 				EC7BDA0C1FA39A7000E8F1C1 /* Frameworks */,
@@ -201,14 +201,14 @@
 			dependencies = (
 				EC7BDA111FA39A7000E8F1C1 /* PBXTargetDependency */,
 			);
-			name = RightAngleCalculatorTests;
+			name = CarpenterSquareTests;
 			productName = RightAngleCalculatorTests;
-			productReference = EC7BDA0F1FA39A7000E8F1C1 /* RightAngleCalculatorTests.xctest */;
+			productReference = EC7BDA0F1FA39A7000E8F1C1 /* CarpenterSquareTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EC7BDA191FA39A7000E8F1C1 /* RightAngleCalculatorUITests */ = {
+		EC7BDA191FA39A7000E8F1C1 /* CarpenterSquareUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC7BDA291FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculatorUITests" */;
+			buildConfigurationList = EC7BDA291FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquareUITests" */;
 			buildPhases = (
 				EC7BDA161FA39A7000E8F1C1 /* Sources */,
 				EC7BDA171FA39A7000E8F1C1 /* Frameworks */,
@@ -219,9 +219,9 @@
 			dependencies = (
 				EC7BDA1C1FA39A7000E8F1C1 /* PBXTargetDependency */,
 			);
-			name = RightAngleCalculatorUITests;
+			name = CarpenterSquareUITests;
 			productName = RightAngleCalculatorUITests;
-			productReference = EC7BDA1A1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.xctest */;
+			productReference = EC7BDA1A1FA39A7000E8F1C1 /* CarpenterSquareUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -250,7 +250,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EC7BD9F61FA39A6F00E8F1C1 /* Build configuration list for PBXProject "RightAngleCalculator" */;
+			buildConfigurationList = EC7BD9F61FA39A6F00E8F1C1 /* Build configuration list for PBXProject "CarpenterSquare" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,9 +263,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC7BD9FA1FA39A6F00E8F1C1 /* RightAngleCalculator */,
-				EC7BDA0E1FA39A7000E8F1C1 /* RightAngleCalculatorTests */,
-				EC7BDA191FA39A7000E8F1C1 /* RightAngleCalculatorUITests */,
+				EC7BD9FA1FA39A6F00E8F1C1 /* CarpenterSquare */,
+				EC7BDA0E1FA39A7000E8F1C1 /* CarpenterSquareTests */,
+				EC7BDA191FA39A7000E8F1C1 /* CarpenterSquareUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -333,12 +333,12 @@
 /* Begin PBXTargetDependency section */
 		EC7BDA111FA39A7000E8F1C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC7BD9FA1FA39A6F00E8F1C1 /* RightAngleCalculator */;
+			target = EC7BD9FA1FA39A6F00E8F1C1 /* CarpenterSquare */;
 			targetProxy = EC7BDA101FA39A7000E8F1C1 /* PBXContainerItemProxy */;
 		};
 		EC7BDA1C1FA39A7000E8F1C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC7BD9FA1FA39A6F00E8F1C1 /* RightAngleCalculator */;
+			target = EC7BD9FA1FA39A6F00E8F1C1 /* CarpenterSquare */;
 			targetProxy = EC7BDA1B1FA39A7000E8F1C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -475,9 +475,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RightAngleCalculator/Info.plist;
+				DEVELOPMENT_TEAM = 2484854MT5;
+				INFOPLIST_FILE = CarpenterSquare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -489,9 +490,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RightAngleCalculator/Info.plist;
+				DEVELOPMENT_TEAM = 2484854MT5;
+				INFOPLIST_FILE = CarpenterSquare/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -510,7 +512,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RightAngleCalculator.app/RightAngleCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarpenterSquare.app/CarpenterSquare";
 			};
 			name = Debug;
 		};
@@ -526,7 +528,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RightAngleCalculator.app/RightAngleCalculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarpenterSquare.app/CarpenterSquare";
 			};
 			name = Release;
 		};
@@ -563,7 +565,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC7BD9F61FA39A6F00E8F1C1 /* Build configuration list for PBXProject "RightAngleCalculator" */ = {
+		EC7BD9F61FA39A6F00E8F1C1 /* Build configuration list for PBXProject "CarpenterSquare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC7BDA211FA39A7000E8F1C1 /* Debug */,
@@ -572,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC7BDA231FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculator" */ = {
+		EC7BDA231FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC7BDA241FA39A7000E8F1C1 /* Debug */,
@@ -581,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC7BDA261FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculatorTests" */ = {
+		EC7BDA261FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquareTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC7BDA271FA39A7000E8F1C1 /* Debug */,
@@ -590,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC7BDA291FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "RightAngleCalculatorUITests" */ = {
+		EC7BDA291FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquareUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EC7BDA2A1FA39A7000E8F1C1 /* Debug */,

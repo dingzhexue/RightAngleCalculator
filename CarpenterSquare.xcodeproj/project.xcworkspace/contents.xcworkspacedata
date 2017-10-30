@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RightAngleCalculator.xcodeproj">
+      location = "self:/Volumes/Data/Work/324/RightAngleCalculator/ios/CarpenterSquare.xcodeproj">
    </FileRef>
 </Workspace>
