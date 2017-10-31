@@ -350,17 +350,11 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qFj-HQ-Vo2">
                                 <rect key="frame" x="0.0" y="64" width="375" height="286"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculator" translatesAutoresizingMaskIntoConstraints="NO" id="dWa-qq-1Au">
-                                        <rect key="frame" x="139" y="95" width="97" height="97"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="dWa-qq-1Au" secondAttribute="height" multiplier="1:1" id="5Fb-Vv-JFO"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculator" translatesAutoresizingMaskIntoConstraints="NO" id="dWa-qq-1Au">
+                                        <rect key="frame" x="145.5" y="70" width="84" height="90"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Awaiting Calculation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUD-CQ-oFk">
-                                        <rect key="frame" x="110" y="200" width="154" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="wUD-CQ-oFk" secondAttribute="height" multiplier="22:3" id="JH8-Lb-37B"/>
-                                        </constraints>
+                                        <rect key="frame" x="110" y="175" width="154" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -375,16 +369,14 @@
                                     </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="wUD-CQ-oFk" firstAttribute="width" secondItem="qFj-HQ-Vo2" secondAttribute="height" multiplier="7:13" id="CGJ-g6-BsO"/>
                                     <constraint firstItem="wUD-CQ-oFk" firstAttribute="centerX" secondItem="dWa-qq-1Au" secondAttribute="centerX" id="JAK-9n-Q21"/>
                                     <constraint firstAttribute="bottom" secondItem="Sww-tx-TWp" secondAttribute="bottom" id="YtG-7V-7L5"/>
                                     <constraint firstItem="dWa-qq-1Au" firstAttribute="centerX" secondItem="qFj-HQ-Vo2" secondAttribute="centerX" id="akH-JN-Ga6"/>
                                     <constraint firstAttribute="trailing" secondItem="Sww-tx-TWp" secondAttribute="trailing" id="ftr-Eb-7dI"/>
-                                    <constraint firstItem="dWa-qq-1Au" firstAttribute="top" secondItem="qFj-HQ-Vo2" secondAttribute="top" constant="95" id="kuc-fD-gQV"/>
+                                    <constraint firstItem="dWa-qq-1Au" firstAttribute="top" secondItem="qFj-HQ-Vo2" secondAttribute="top" constant="70" id="kuc-fD-gQV"/>
                                     <constraint firstItem="Sww-tx-TWp" firstAttribute="top" secondItem="qFj-HQ-Vo2" secondAttribute="top" id="lFR-B5-zNX"/>
-                                    <constraint firstItem="dWa-qq-1Au" firstAttribute="width" secondItem="qFj-HQ-Vo2" secondAttribute="height" multiplier="80:143" constant="-63" id="reV-iF-Y1X"/>
                                     <constraint firstItem="Sww-tx-TWp" firstAttribute="leading" secondItem="qFj-HQ-Vo2" secondAttribute="leading" id="s69-KU-s8t"/>
-                                    <constraint firstItem="wUD-CQ-oFk" firstAttribute="top" secondItem="dWa-qq-1Au" secondAttribute="bottom" constant="8" id="uP9-9F-VK6"/>
+                                    <constraint firstItem="wUD-CQ-oFk" firstAttribute="top" secondItem="dWa-qq-1Au" secondAttribute="bottom" constant="15" id="uP9-9F-VK6"/>
                                     <constraint firstAttribute="width" secondItem="qFj-HQ-Vo2" secondAttribute="height" multiplier="375:286" id="uqJ-NQ-gWp"/>
                                 </constraints>
                             </view>
