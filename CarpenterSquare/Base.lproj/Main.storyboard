@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Charpenter Square-->
+        <!--Carpenter Square-->
         <scene sceneID="i2h-2Q-L7K">
             <objects>
                 <viewController id="Nwp-FH-cOV" customClass="ViewController" customModule="CarpenterSquare" customModuleProvider="target" sceneMemberID="viewController">
@@ -415,7 +415,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7FB-PI-6cO"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Charpenter Square" id="Tdk-mc-ItK">
+                    <navigationItem key="navigationItem" title="Carpenter Square" id="Tdk-mc-ItK">
                         <barButtonItem key="rightBarButtonItem" image="preButton" landscapeImage="preButton" largeContentSizeImage="preButton" id="VJF-0b-Yf9">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pJU-du-NFZ">
                                 <rect key="frame" x="309" y="0.0" width="50" height="44"/>
