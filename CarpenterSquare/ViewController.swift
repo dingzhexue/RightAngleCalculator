@@ -10,16 +10,20 @@ import UIKit
 var mainTriangle : Triangle!
 var previousTriangles:[Triangle] = []
 
+
 class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource {
     
+    @IBOutlet weak var aView: UIView!
     @IBOutlet weak var legAFeet: UITextField!
     @IBOutlet weak var legAInches: UITextField!
     @IBOutlet weak var legASixteenths: UITextField!
     
+    @IBOutlet weak var bView: UIView!
     @IBOutlet weak var legBFeet: UITextField!
     @IBOutlet weak var legBInches: UITextField!
     @IBOutlet weak var legBSixteenths: UITextField!
     
+    @IBOutlet weak var cView: UIView!
     @IBOutlet weak var hypotenuseFeet: UITextField!
     @IBOutlet weak var hypotenuseInches: UITextField!
     @IBOutlet weak var hypotenuseSixteenths: UITextField!
@@ -29,19 +33,33 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     @IBOutlet weak var cLabel: UILabel!
     
     @IBOutlet weak var calculateButton: UIButton!
+    @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var previousTrianglesView: UIView!
     @IBOutlet weak var previousTableView: UITableView!
+    @IBOutlet weak var calulatorImage: UIImageView!
+    @IBOutlet weak var awaitLabel: UILabel!
+    
+    @IBOutlet weak var aViewTop: NSLayoutConstraint!
     
     var triangleView : TriangleView!
     var triangleLengthsView : TriangleLengthsView!
+    var atop,btop,ctop : CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         mainTriangle = Triangle()
         
+        self.previousTableView.isHidden = true
         self.loadPreviousTriangles()
         self.hideTriangle()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        
+        atop = self.aView.frame.origin.y
+        btop = self.bView.frame.origin.y
+        ctop = self.cView.frame.origin.y
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -91,6 +109,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         mainTriangle = previousTriangles[index]
         self.fillFields()
         self.drawTriangle()
+        self.showABC()
     }
 
     func clearFields(){
@@ -109,7 +128,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         hypotenuseSixteenths.text = ""
     }
     func hidePreviousTriangles() {
-        previousTrianglesView.isHidden = true
+        previousTableView.isHidden = true
     }
 
     // Updates mainTriangle with values from the textFields
@@ -121,7 +140,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         mainTriangle.hypotenuse = (hypotenuseFeet.text! as NSString).doubleValue + (hypotenuseInches.text! as NSString).doubleValue/12.0 + (hypotenuseSixteenths.text! as NSString).doubleValue/(12.0*16.0)
     }
 
-    func dismissKeyboard(){
+    @objc func dismissKeyboard(){
         legAFeet.resignFirstResponder()
         legAInches.resignFirstResponder()
         legASixteenths.resignFirstResponder()
@@ -140,12 +159,26 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
             triangleView.isHidden = true
             triangleLengthsView.isHidden = true
         }
-
         aLabel.isHidden = true
         bLabel.isHidden = true
         cLabel.isHidden = true
     }
-
+    
+    func hideABC() {
+        self.aView.isHidden = true
+        self.bView.isHidden = true
+        self.cView.isHidden = true
+        self.calculateButton.isHidden = true
+        self.clearButton.isHidden = true
+    }
+    
+    func showABC(){
+        self.aView.isHidden = false
+        self.bView.isHidden = false
+        self.cView.isHidden = false
+        self.calculateButton.isHidden = false
+        self.clearButton.isHidden = false
+    }
     func showTriangle(){
         if(triangleView != nil){
             triangleView.isHidden = false
@@ -159,20 +192,20 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     // Draws triangle currently in mainTriangle
     func drawTriangle(){
         self.showTriangle()
-
         let triangleSize:Float = 200
 
         // scale triangle so largest leg has appropriate length
         let largestLegLength:Double = max(mainTriangle.legA,mainTriangle.legB)
         let scale:Double = Double(triangleSize)/largestLegLength
 
-        let calcButtonBottom:Float = Float(calculateButton.frame.origin.y + calculateButton.frame.size.height)
-
+//        let calcButtonBottom:Float = Float(calculateButton.frame.origin.y + calculateButton.frame.size.height)
+       
+        
         // Determine origin for triangle
-        let vSpace:Float = Float(self.view.frame.size.height) - 30 - calcButtonBottom
+        let vSpace:Float = Float(previousTrianglesView.frame.origin.y) + 20
         let hSpace:Float = 375
-        let origin:CGPoint = CGPoint(x:Double(hSpace)/2.0 - mainTriangle.legB*scale/2.0,
-                                     y:Double(calcButtonBottom) + Double(vSpace)/2.0 + mainTriangle.legA*scale/2.0)
+        let origin:CGPoint = CGPoint(x:Double(hSpace)/2.0 - mainTriangle.legB*scale/3.0,
+                                     y:Double(vSpace)*2.0 + mainTriangle.legA*scale/2.0)
 
         //////////////
         //Set up labels for triangle diagram
@@ -258,7 +291,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
                 self.clearFields()
                 let alert = UIAlertController(title: "Impossible Triangle!", message: "The triangle you specified is not possible because the hypotenuse is shorter than one of the legs!", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Okay.", style: UIAlertActionStyle.default, handler: nil))
-                alert.present(alert, animated: true, completion: nil)
+                present(alert, animated: true, completion: nil)
                 return
             }
 
@@ -270,7 +303,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
                 self.clearFields()
                 let alert = UIAlertController(title: "Impossible Triangle!", message: "The triangle you specified is not possible because the hypotenuse is shorter than one of the legs!", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Okay.", style: UIAlertActionStyle.default, handler: nil))
-                alert.present(alert, animated: true, completion: nil)
+                present(alert, animated: true, completion: nil)
                 return
             }
 
@@ -348,16 +381,20 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     @IBAction func showPreviousTriangles(_ sender: Any) {
         self.dismissKeyboard()
         
-        if(previousTrianglesView.isHidden){
-            previousTrianglesView.isHidden = false
+        if(previousTableView.isHidden){
+            previousTableView.isHidden = false
+            self.hideABC()
             self.hideTriangle()
         }
         else{
             self.hidePreviousTriangles()
+            self.showABC()
         }
     }
     
     @IBAction func calulateButtonPushed(_ sender: Any) {
+        self.calulatorImage.isHidden = true
+        self.awaitLabel.isHidden = true
         self.dismissKeyboard()
         self.hidePreviousTriangles()
         
@@ -380,6 +417,9 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.hideTriangle()
         self.hidePreviousTriangles()
         self.clearFields()
+        self.previousTrianglesView.isHidden = false
+        self.calulatorImage.isHidden = false
+        self.awaitLabel.isHidden = false
     }
     
     //MARK: UITextFieldDelegate Methods
@@ -405,6 +445,8 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
+        self.setDoneOnKeyboard()
+        
         switch (textField.tag) {
         case 1:
             if(mainTriangle.legB != 0 && mainTriangle.hypotenuse != 0) {return false}
@@ -419,6 +461,44 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
             break
         }
         return true
+    }
+    
+    func setDoneOnKeyboard() {
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.backgroundColor = UIColor.gray
+
+        keyboardToolbar.sizeToFit()
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(self.dismissKeyboard))
+        keyboardToolbar.items = [flexBarButton, doneBarButton]
+        
+        self.legAFeet.inputAccessoryView = keyboardToolbar
+        self.legAInches.inputAccessoryView = keyboardToolbar
+        self.legASixteenths.inputAccessoryView = keyboardToolbar
+        
+        self.legBFeet.inputAccessoryView = keyboardToolbar
+        self.legBInches.inputAccessoryView = keyboardToolbar
+        self.legBSixteenths.inputAccessoryView = keyboardToolbar
+        
+        self.hypotenuseFeet.inputAccessoryView = keyboardToolbar
+        self.hypotenuseInches.inputAccessoryView = keyboardToolbar
+        self.hypotenuseSixteenths.inputAccessoryView = keyboardToolbar
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        self.previousTrianglesView.isHidden = true
+        self.calculateButton.isHidden = true
+        self.clearButton.isHidden = true
+        self.aViewTop.constant = -190
+        
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        self.previousTrianglesView.isHidden = false
+        self.calculateButton.isHidden = false
+        self.clearButton.isHidden = false
+        self.aViewTop.constant = 51
+        
     }
 }
 
