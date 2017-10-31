@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -335,12 +335,14 @@
                                     <action selector="calulateButtonPushed:" destination="Nwp-FH-cOV" eventType="touchUpInside" id="EK1-VU-Ijv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H60-2B-INP">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H60-2B-INP">
                                 <rect key="frame" x="23" y="543" width="42" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="H60-2B-INP" secondAttribute="height" multiplier="1:1" id="Kiz-Fe-ngc"/>
                                 </constraints>
-                                <state key="normal" title="clear"/>
+                                <state key="normal" title="clear">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="clearButtonPushed:" destination="Nwp-FH-cOV" eventType="touchUpInside" id="Bxg-dV-qRX"/>
                                 </connections>
