@@ -28,7 +28,7 @@ class TriangleView: UIView {
         
         context.setLineWidth(1.0)
         
-        context.setFillColor(red:179.0/255.0, green:219.0/255.0, blue:236.0/255.0, alpha:1.0)
+        context.setFillColor(red: 76/255, green: 142/255, blue: 226/255, alpha: 1.0)
         
         context.beginPath()
 

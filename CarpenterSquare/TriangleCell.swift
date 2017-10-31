@@ -31,12 +31,12 @@ class TriangleCell : UITableViewCell{
         let height = self.contentView.frame.size.height
         
         self.aLabel = UILabel.init(frame: CGRect(x: 20, y: -3, width: width, height: height))
-        self.bLabel = UILabel.init(frame: CGRect(x: 30+1*width, y: -3, width: width, height: height))
-        self.cLabel = UILabel.init(frame: CGRect(x: 45+2*width, y: -3, width: width, height: height))
+        self.bLabel = UILabel.init(frame: CGRect(x: 40+1*width, y: -3, width: width, height: height))
+        self.cLabel = UILabel.init(frame: CGRect(x: 55+2*width, y: -3, width: width, height: height))
 
-        self.aLabel.font = UIFont.italicSystemFont(ofSize: 16)
-        self.bLabel.font = UIFont.italicSystemFont(ofSize: 16)
-        self.cLabel.font = UIFont.italicSystemFont(ofSize: 16)
+        self.aLabel.font = UIFont.italicSystemFont(ofSize: 20)
+        self.bLabel.font = UIFont.italicSystemFont(ofSize: 20)
+        self.cLabel.font = UIFont.italicSystemFont(ofSize: 20)
 
         self.aLabel.minimumScaleFactor = 0.2
         self.bLabel.minimumScaleFactor = 0.2
@@ -53,10 +53,10 @@ class TriangleCell : UITableViewCell{
         var divider1:UIView!
         var divider2:UIView!
         
-        divider1 = UIView.init(frame: CGRect(x: 20+width, y: 0, width: 0.5, height: height))
+        divider1 = UIView.init(frame: CGRect(x: 30+width, y: 0, width: 0.5, height: height))
         divider1.backgroundColor = UIColor.gray
 
-        divider2 = UIView.init(frame: CGRect(x: 35+2*width, y: 0, width: 0.5, height: height))
+        divider2 = UIView.init(frame: CGRect(x: 45+2*width, y: 0, width: 0.5, height: height))
         divider2.backgroundColor = UIColor.gray
         
         self.contentView.addSubview(divider1)

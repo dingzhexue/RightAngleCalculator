@@ -60,7 +60,21 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         atop = self.aView.frame.origin.y
         btop = self.bView.frame.origin.y
         ctop = self.cView.frame.origin.y
+        
+        self.calculateButton.backgroundColor = UIColor.init(red: 76/255, green: 142/255, blue: 226/255, alpha: 1.0)
+        self.clearButton.backgroundColor = UIColor.init(red: 76/255, green: 142/255, blue: 226/255, alpha: 1.0)
+        
+        self.calculateButton.layer.cornerRadius = 5
+        self.clearButton.layer.cornerRadius = self.clearButton.bounds.width * 0.5
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -292,6 +306,8 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
                 let alert = UIAlertController(title: "Impossible Triangle!", message: "The triangle you specified is not possible because the hypotenuse is shorter than one of the legs!", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Okay.", style: UIAlertActionStyle.default, handler: nil))
                 present(alert, animated: true, completion: nil)
+                self.calulatorImage.isHidden = false
+                self.awaitLabel.isHidden = false
                 return
             }
 
@@ -304,6 +320,8 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
                 let alert = UIAlertController(title: "Impossible Triangle!", message: "The triangle you specified is not possible because the hypotenuse is shorter than one of the legs!", preferredStyle: UIAlertControllerStyle.alert)
                 alert.addAction(UIAlertAction(title: "Okay.", style: UIAlertActionStyle.default, handler: nil))
                 present(alert, animated: true, completion: nil)
+                self.calulatorImage.isHidden = false
+                self.awaitLabel.isHidden = false
                 return
             }
 
@@ -424,7 +442,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     
     //MARK: UITextFieldDelegate Methods
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
-        if((textField.text)!.characters.count > 6) {return false}
+        if((textField.text)!.characters.count > 8) {return false}
         
         self.updateTriangleValues()
         
