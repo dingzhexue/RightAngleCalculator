@@ -69,10 +69,12 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         
         tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.previousTableView.rowHeight = 35
     }
     
     override func didReceiveMemoryWarning() {
@@ -370,6 +372,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     
     //MARK: UITableViewDataSource methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(previousTriangles.count)
         return previousTriangles.count
     }
     
@@ -464,7 +467,6 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     //MARK: UITextFieldDelegate Methods
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         if((textField.text)!.characters.count > 8) {return false}
-        
         self.updateTriangleValues()
         
         switch (textField.tag) {

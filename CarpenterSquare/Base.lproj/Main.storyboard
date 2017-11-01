@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -360,7 +360,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-tx-TWp">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
                                             <outlet property="dataSource" destination="Nwp-FH-cOV" id="IkV-9F-8WE"/>
@@ -370,7 +370,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wUD-CQ-oFk" firstAttribute="centerX" secondItem="dWa-qq-1Au" secondAttribute="centerX" id="JAK-9n-Q21"/>
-                                    <constraint firstAttribute="bottom" secondItem="Sww-tx-TWp" secondAttribute="bottom" id="YtG-7V-7L5"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sww-tx-TWp" secondAttribute="bottom" constant="41" id="YtG-7V-7L5"/>
                                     <constraint firstItem="dWa-qq-1Au" firstAttribute="centerX" secondItem="qFj-HQ-Vo2" secondAttribute="centerX" id="akH-JN-Ga6"/>
                                     <constraint firstAttribute="trailing" secondItem="Sww-tx-TWp" secondAttribute="trailing" id="ftr-Eb-7dI"/>
                                     <constraint firstItem="dWa-qq-1Au" firstAttribute="top" secondItem="qFj-HQ-Vo2" secondAttribute="top" constant="70" id="kuc-fD-gQV"/>
