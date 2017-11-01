@@ -44,7 +44,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     var triangleView : TriangleView!
     var triangleLengthsView : TriangleLengthsView!
     var atop,btop,ctop : CGFloat!
-    
+    var tap: UITapGestureRecognizer!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -67,7 +67,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.calculateButton.layer.cornerRadius = 5
         self.clearButton.layer.cornerRadius = self.clearButton.bounds.width * 0.5
         
-        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
+        tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
     
@@ -377,6 +377,10 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         return 1
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 35
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TriangleCell(style: .default, reuseIdentifier: "")
         let t = previousTriangles[indexPath.row]
@@ -400,11 +404,16 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.dismissKeyboard()
         
         if(previousTableView.isHidden){
+            tap.cancelsTouchesInView = false
+            self.calulatorImage.isHidden = true
+            self.awaitLabel.isHidden = true
             previousTableView.isHidden = false
             self.hideABC()
             self.hideTriangle()
         }
         else{
+            self.calulatorImage.isHidden = false
+            self.awaitLabel.isHidden = false
             self.hidePreviousTriangles()
             self.showABC()
         }
@@ -424,9 +433,21 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
             self.drawTriangle()
             return
         }
-        if (mainTriangle.legA == 0 && mainTriangle.legB == 0) {return}
-        if (mainTriangle.legA == 0 && mainTriangle.hypotenuse == 0) {return}
-        if (mainTriangle.legB == 0 && mainTriangle.hypotenuse == 0) {return}
+        if (mainTriangle.legA == 0 && mainTriangle.legB == 0) {
+            self.calulatorImage.isHidden = false
+            self.awaitLabel.isHidden = false
+            return
+        }
+        if (mainTriangle.legA == 0 && mainTriangle.hypotenuse == 0) {
+            self.calulatorImage.isHidden = false
+            self.awaitLabel.isHidden = false
+            return
+        }
+        if (mainTriangle.legB == 0 && mainTriangle.hypotenuse == 0) {
+            self.calulatorImage.isHidden = false
+            self.awaitLabel.isHidden = false
+            return
+        }
         
         self.completeMainTriangle()
     }
@@ -515,7 +536,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.previousTrianglesView.isHidden = false
         self.calculateButton.isHidden = false
         self.clearButton.isHidden = false
-        self.aViewTop.constant = 51
+        self.aViewTop.constant = 30
         
     }
 }
