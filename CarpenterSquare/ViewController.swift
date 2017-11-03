@@ -1,15 +1,15 @@
 //
 //  ViewController.swift
-//  RightAngleCalculator
+//  carpentersquare
 //
-//  Created by admin on 10/27/17.
+//  Created by Administrator on 10/31/17.
+//  Copyright © 2017 RedShepard. All rights reserved.
 //
 
 import UIKit
 
 var mainTriangle : Triangle!
 var previousTriangles:[Triangle] = []
-
 
 class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,UITableViewDataSource {
     
@@ -18,11 +18,6 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     @IBOutlet weak var legAInches: UITextField!
     @IBOutlet weak var legASixteenths: UITextField!
     
-    @IBOutlet weak var topa: NSLayoutConstraint!
-    @IBOutlet weak var CViewTop: NSLayoutConstraint!
-    
-    @IBOutlet weak var navItem: UINavigationItem!
-    @IBOutlet weak var BViewTop: NSLayoutConstraint!
     @IBOutlet weak var bView: UIView!
     @IBOutlet weak var legBFeet: UITextField!
     @IBOutlet weak var legBInches: UITextField!
@@ -37,26 +32,27 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     @IBOutlet weak var bLabel: UILabel!
     @IBOutlet weak var cLabel: UILabel!
     
-    
     @IBOutlet weak var calculateButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var previousTrianglesView: UIView!
     @IBOutlet weak var previousTableView: UITableView!
     @IBOutlet weak var calulatorImage: UIImageView!
     @IBOutlet weak var awaitLabel: UILabel!
+    @IBOutlet weak var noHistoryImageView: UIImageView!
     
-    
+    @IBOutlet weak var aViewTop: NSLayoutConstraint!
     
     var triangleView : TriangleView!
     var triangleLengthsView : TriangleLengthsView!
     var atop,btop,ctop : CGFloat!
     var tap: UITapGestureRecognizer!
+    var showHistory = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         mainTriangle = Triangle()
         
-    
         self.previousTableView.isHidden = true
         self.loadPreviousTriangles()
         self.hideTriangle()
@@ -80,8 +76,12 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.prefersLargeTitles = false
-        self.previousTableView.rowHeight = 34
+        if #available(iOS 11.0, *) {
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+        } else {
+            // Fallback on earlier versions
+        }
+        self.previousTableView.rowHeight = 35
     }
     
     override func didReceiveMemoryWarning() {
@@ -100,7 +100,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         
         saveArray.write(to: URL(string:self.completePathForFileName(str: "PreviousTriangles"))!, atomically: false)
     }
-
+    
     func loadPreviousTriangles() {
         previousTriangles = []
         let triangle = Triangle.init()
@@ -113,39 +113,39 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
             previousTriangles.append(triangle.triangleFromString(string: str as! String))
         }
     }
-
+    
     func completePathForFileName(str:String) -> String {
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
-
+        
         return String(describing: documentsDirectory?.appendingPathComponent(str))
     }
-
+    
     //MARK: private methods
     func previousTriangleChosen(index:Int){
-
+        
         if (index >= previousTriangles.count) {return}
-
+        
         self.dismissKeyboard()
         self.hidePreviousTriangles()
-
+        
         // load selected triangle
         mainTriangle = previousTriangles[index]
         self.fillFields()
         self.drawTriangle()
         self.showABC()
     }
-
+    
     func clearFields(){
         mainTriangle = Triangle()
-
+        
         legAFeet.text = ""
         legAInches.text = ""
         legASixteenths.text = ""
-
+        
         legBFeet.text = ""
         legBInches.text = ""
         legBSixteenths.text = ""
-
+        
         hypotenuseFeet.text = ""
         hypotenuseInches.text = ""
         hypotenuseSixteenths.text = ""
@@ -153,30 +153,30 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     func hidePreviousTriangles() {
         previousTableView.isHidden = true
     }
-
+    
     // Updates mainTriangle with values from the textFields
     func updateTriangleValues(){
         mainTriangle.legA = (legAFeet.text! as NSString).doubleValue + (legAInches.text! as NSString).doubleValue/12.0 + (legASixteenths.text! as NSString).doubleValue/(12.0*16.0)
-
+        
         mainTriangle.legB = (legBFeet.text! as NSString).doubleValue + (legBInches.text! as NSString).doubleValue/12.0 + (legBSixteenths.text! as NSString).doubleValue/(12.0*16.0)
-
+        
         mainTriangle.hypotenuse = (hypotenuseFeet.text! as NSString).doubleValue + (hypotenuseInches.text! as NSString).doubleValue/12.0 + (hypotenuseSixteenths.text! as NSString).doubleValue/(12.0*16.0)
     }
-
+    
     @objc func dismissKeyboard(){
         legAFeet.resignFirstResponder()
         legAInches.resignFirstResponder()
         legASixteenths.resignFirstResponder()
-
+        
         legBFeet.resignFirstResponder()
         legBInches.resignFirstResponder()
         legBSixteenths.resignFirstResponder()
-
+        
         hypotenuseFeet.resignFirstResponder()
         hypotenuseInches.resignFirstResponder()
         hypotenuseSixteenths.resignFirstResponder()
     }
-
+    
     func hideTriangle() {
         if(triangleView != nil){
             triangleView.isHidden = true
@@ -211,47 +211,47 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         bLabel.isHidden = false
         cLabel.isHidden = false
     }
-
+    
     // Draws triangle currently in mainTriangle
     func drawTriangle(){
         self.showTriangle()
-        let triangleSize:Float! =  Float(previousTrianglesView.frame.size.height * 200/375)
-
+        let triangleSize:Float = 200
+        
         // scale triangle so largest leg has appropriate length
         let largestLegLength:Double = max(mainTriangle.legA,mainTriangle.legB)
         let scale:Double = Double(triangleSize)/largestLegLength
-
-//        let calcButtonBottom:Float = Float(calculateButton.frame.origin.y + calculateButton.frame.size.height)
-       
+        
+        //        let calcButtonBottom:Float = Float(calculateButton.frame.origin.y + calculateButton.frame.size.height)
+        
         
         // Determine origin for triangle
-        let vSpace:Float = Float(previousTrianglesView.frame.origin.y) + Float(previousTrianglesView.frame.size.height * 88/750)
-        let hSpace:Float = Float(previousTableView.frame.size.width )
+        let vSpace:Float = Float(previousTrianglesView.frame.origin.y) + 20
+        let hSpace:Float = 375
         let origin:CGPoint = CGPoint(x:Double(hSpace)/2.0 - mainTriangle.legB*scale/3.0,
                                      y:Double(vSpace)*2.0 + mainTriangle.legA*scale/2.0)
-
+        
         //////////////
         //Set up labels for triangle diagram
-
+        
         aLabel.isHidden = false
         bLabel.isHidden = false
         cLabel.isHidden = false
-
+        
         aLabel.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
         bLabel.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
         cLabel.frame = CGRect(x: 0, y: 0, width: 200, height: 100)
-
+        
         aLabel.frame = CGRect(x: 0, y: 0, width: origin.x - 6 - 2*4, height: 100)
-
+        
         let length = Length.init()
         aLabel.text = String(format:"A\n%@", length.formattedStringForFeet(feet: mainTriangle.legA))
         bLabel.text = String(format:"B\n%@", length.formattedStringForFeet(feet: mainTriangle.legB))
         cLabel.text = String(format:"C\n%@", length.formattedStringForFeet(feet: mainTriangle.hypotenuse))
-
+        
         aLabel.sizeToFit()
         bLabel.sizeToFit()
         cLabel.sizeToFit()
-
+        
         ///////////////////////////
         if(triangleView != nil){
             triangleView.isHidden = false
@@ -259,9 +259,9 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
             
             triangleView.removeFromSuperview()
             triangleLengthsView.removeFromSuperview()
-
+            
         }
-
+        
         
         
         triangleView = TriangleView(frame: CGRect(x: origin.x,
@@ -276,17 +276,17 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
                                            y: Double(Float(origin.y) - Float(mainTriangle.legA*scale) - triangleLengthsView.size - triangleLengthsView.padding),
                                            width:  Double(Float(mainTriangle.legB*scale) + 2*triangleLengthsView.size + 2*triangleLengthsView.padding),
                                            height: Double(Float(mainTriangle.legA*scale) + 2*triangleLengthsView.size + 2*triangleLengthsView.padding))
-
+        
         self.view.addSubview(triangleLengthsView)
-
+        
         /////////////
         // Position Labels
-
+        
         aLabel.center = CGPoint(x: Double(Float(origin.x) - Float(aLabel.frame.size.width)/2.0 - triangleLengthsView.size - 2*triangleLengthsView.padding),
                                 y: Double(Float(origin.y) - Float(mainTriangle.legA/2.0*scale)))
         bLabel.center = CGPoint(x: Double(origin.x) + mainTriangle.legB/2.0*scale,
                                 y: Double(origin.y) + Double(bLabel.frame.size.height)/2.0 + Double(triangleLengthsView.size) + 2*Double(triangleLengthsView.padding))
-
+        
         let angle:Float = atan2f(Float(triangleView.frame.size.width), Float(triangleView.frame.size.height));
         cLabel.center = CGPoint(x: Double(Float(origin.x) + Float(mainTriangle.legB/2.0*scale) + (Float(cLabel.frame.size.width)/2.0 + triangleLengthsView.size + 3*triangleLengthsView.padding)*cos(angle)),
                                 y: Double(Float(origin.y) - Float(mainTriangle.legA/2.0*scale) - (Float(cLabel.frame.size.height)/2.0 + triangleLengthsView.size + 3*triangleLengthsView.padding)*sin(angle)))
@@ -295,20 +295,20 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         aLabel.removeFromSuperview()
         bLabel.removeFromSuperview()
         cLabel.removeFromSuperview()
-
+        
         self.view.addSubview(aLabel)
         self.view.addSubview(bLabel)
         self.view.addSubview(cLabel)
-
+        
         self.fillFields()
     }
-
+    
     ////////////
     // Computes the length of the missing side and saves the triangle's information
     func completeMainTriangle(){
-
+        
         self.dismissKeyboard()
-
+        
         if(mainTriangle.legA == 0){
             if (mainTriangle.legB > mainTriangle.hypotenuse) {
                 self.clearFields()
@@ -319,10 +319,10 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
                 self.awaitLabel.isHidden = false
                 return
             }
-
+            
             mainTriangle.legA = sqrt(pow(mainTriangle.hypotenuse,2) - pow(mainTriangle.legB, 2))
         }
-
+        
         if(mainTriangle.legB == 0){
             if (mainTriangle.legA > mainTriangle.hypotenuse) {
                 self.clearFields()
@@ -333,19 +333,19 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
                 self.awaitLabel.isHidden = false
                 return
             }
-
+            
             mainTriangle.legB = sqrt(pow(mainTriangle.hypotenuse,2) - pow(mainTriangle.legA, 2))
         }
-
+        
         if(mainTriangle.hypotenuse == 0){
             mainTriangle.hypotenuse = sqrt(pow(mainTriangle.legA,2) + pow(mainTriangle.legB, 2))
         }
-
+        
         self.fillFields()
         self.drawTriangle()
         self.saveMainTriangle()
     }
-
+    
     func saveMainTriangle(){
         if(previousTriangles.count >= 7) {
             previousTriangles.removeLast()
@@ -354,22 +354,22 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.savePreviousTriangles()
         previousTableView.reloadData()
     }
-
+    
     ////////////////
     // Fills textfields with values from mainTriangle
     func fillFields(){
         var length = Length.init()
-
+        
         length = length.lengthWithFeet(feet: mainTriangle.legA)
         legAFeet.text = String(format:"%d",length.feet)
         legAInches.text = String(format:"%d",length.inches)
         legASixteenths.text = String(format:"%d",length.sixteenths)
-
+        
         length = length.lengthWithFeet(feet: mainTriangle.legB)
         legBFeet.text = String(format:"%d",length.feet)
         legBInches.text = String(format:"%d",length.inches)
         legBSixteenths.text = String(format:"%d",length.sixteenths)
-
+        
         length = length.lengthWithFeet(feet: mainTriangle.hypotenuse)
         hypotenuseFeet.text = String(format:"%d",length.feet)
         hypotenuseInches.text = String(format:"%d",length.inches)
@@ -380,6 +380,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     //MARK: UITableViewDataSource methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(previousTriangles.count)
+        
         return previousTriangles.count
     }
     
@@ -406,6 +407,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         self.previousTriangleChosen(index: indexPath.row)
+        showHistory = false
     }
     
     
@@ -413,19 +415,29 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     @IBAction func showPreviousTriangles(_ sender: Any) {
         self.dismissKeyboard()
         
-        if(previousTableView.isHidden){
+        showHistory = !showHistory
+        
+        if(showHistory){
             tap.cancelsTouchesInView = false
             self.calulatorImage.isHidden = true
             self.awaitLabel.isHidden = true
             previousTableView.isHidden = false
             self.hideABC()
             self.hideTriangle()
+            
+            if previousTriangles.count == 0 {
+                previousTableView.isHidden = true
+                noHistoryImageView.isHidden = false
+            } else {
+                noHistoryImageView.isHidden = true
+            }
         }
         else{
             self.calulatorImage.isHidden = false
             self.awaitLabel.isHidden = false
             self.hidePreviousTriangles()
             self.showABC()
+            noHistoryImageView.isHidden = true
         }
     }
     
@@ -477,17 +489,17 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.updateTriangleValues()
         
         switch (textField.tag) {
-            case 1:
-                if(mainTriangle.legB != 0 && mainTriangle.hypotenuse != 0) {return false}
-                break
-            case 2:
-                if(mainTriangle.legA != 0 && mainTriangle.hypotenuse != 0) {return false}
-                break
-            case 3:
-                if(mainTriangle.legB != 0 && mainTriangle.legA != 0) {return false}
-                break
-            default:
-                break
+        case 1:
+            if(mainTriangle.legB != 0 && mainTriangle.hypotenuse != 0) {return false}
+            break
+        case 2:
+            if(mainTriangle.legA != 0 && mainTriangle.hypotenuse != 0) {return false}
+            break
+        case 3:
+            if(mainTriangle.legB != 0 && mainTriangle.legA != 0) {return false}
+            break
+        default:
+            break
         }
         return true
     }
@@ -514,7 +526,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     func setDoneOnKeyboard() {
         let keyboardToolbar = UIToolbar()
         keyboardToolbar.backgroundColor = UIColor.gray
-
+        
         keyboardToolbar.sizeToFit()
         let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(self.dismissKeyboard))
@@ -537,15 +549,15 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.previousTrianglesView.isHidden = true
         self.calculateButton.isHidden = true
         self.clearButton.isHidden = true
-        self.CViewTop.constant = +190
+        self.aViewTop.constant = -190
         
     }
-
+    
     @objc func keyboardWillHide(notification: NSNotification) {
         self.previousTrianglesView.isHidden = false
         self.calculateButton.isHidden = false
         self.clearButton.isHidden = false
-        self.CViewTop.constant = 30
+        self.aViewTop.constant = 30
         
     }
 }

@@ -1,8 +1,9 @@
 //
-//  File.swift
-//  RightAngleCalculator
+//  Length.swift
+//  carpentersquare
 //
-//  Created by admin on 10/27/17.
+//  Created by Administrator on 10/31/17.
+//  Copyright © 2017 RedShepard. All rights reserved.
 //
 
 import Foundation
@@ -15,7 +16,7 @@ class Length: NSObject {
     func lengthWithFeet(feet: Double) -> Length {
         
         let len = Length.init()
-    
+        
         len.feet = Int(floor(feet))
         len.inches = Int(floor(12 * (feet - Double(len.feet))))
         len.sixteenths = Int(round(16*(12*(feet - Double(len.feet)) - Double(len.inches))))
@@ -31,5 +32,5 @@ class Length: NSObject {
         }
         return String(format:"%d' %d %d/16\"",len.feet,len.inches,len.sixteenths)
     }
-
+    
 }

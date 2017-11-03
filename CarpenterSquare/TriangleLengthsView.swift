@@ -1,8 +1,9 @@
 //
 //  TriangleLengthsView.swift
-//  RightAngleCalculator
+//  carpentersquare
 //
-//  Created by admin on 10/27/17.
+//  Created by Administrator on 10/31/17.
+//  Copyright © 2017 RedShepard. All rights reserved.
 //
 
 import UIKit
@@ -28,7 +29,7 @@ class TriangleLengthsView : UIView{
         let context:CGContext = UIGraphicsGetCurrentContext()!
         
         context.setStrokeColor(red:0.0, green:0.0, blue:0.0,alpha:1.0)
-
+        
         context.setLineWidth(2.0)
         
         // a leg
@@ -46,23 +47,23 @@ class TriangleLengthsView : UIView{
         context.move(to: CGPoint(x: Double(self.size/2.0), y: Double(self.padding + self.size)))
         context.addLine(to: CGPoint(x: Double(self.size/2.0), y: Double(Float(self.frame.size.height) - self.padding - self.size)))
         context.strokePath()
-
+        
         // b leg
         context.beginPath()
         context.move(to: CGPoint(x: Double(self.padding + self.size), y: Double(self.frame.size.height)))
         context.addLine(to: CGPoint(x: Double(self.padding + self.size), y: Double(Float(self.frame.size.height) - self.size)))
         context.strokePath()
-
+        
         context.beginPath()
         context.move(to: CGPoint(x: Double(Float(self.frame.size.width) - self.padding - self.size), y: Double(self.frame.size.height)))
         context.addLine(to: CGPoint(x: Double(Float(self.frame.size.width) - self.padding - self.size), y: Double(Float(self.frame.size.height) - self.size)))
         context.strokePath()
-
+        
         context.beginPath()
         context.move(to: CGPoint(x: Double(self.padding + self.size), y: Double(Float(self.frame.size.height) - self.size/2.0)))
         context.addLine(to: CGPoint(x: Double(Float(self.frame.size.width) - self.padding - self.size), y: Double(Float(self.frame.size.height) - self.size/2.0)))
         context.strokePath()
-
+        
         // c leg
         let angle = atan2f(Float(self.frame.size.width), Float(self.frame.size.height))
         
@@ -96,6 +97,6 @@ class TriangleLengthsView : UIView{
             y: Double(Float(self.frame.size.height) - self.padding - self.size - (self.size/2.0 + self.padding)*sinf(angle))
         ))
         context.strokePath()
-
+        
     }
 }

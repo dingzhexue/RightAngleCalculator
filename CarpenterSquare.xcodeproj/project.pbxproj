@@ -7,74 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC7BD9FF1FA39A6F00E8F1C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BD9FE1FA39A6F00E8F1C1 /* AppDelegate.swift */; };
-		EC7BDA011FA39A6F00E8F1C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA001FA39A6F00E8F1C1 /* ViewController.swift */; };
-		EC7BDA041FA39A6F00E8F1C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDA021FA39A6F00E8F1C1 /* Main.storyboard */; };
-		EC7BDA061FA39A6F00E8F1C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDA051FA39A6F00E8F1C1 /* Assets.xcassets */; };
-		EC7BDA091FA39A6F00E8F1C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC7BDA071FA39A6F00E8F1C1 /* LaunchScreen.storyboard */; };
-		EC7BDA141FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA131FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift */; };
-		EC7BDA1F1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA1E1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift */; };
-		EC7BDA401FA411A200E8F1C1 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA3F1FA411A200E8F1C1 /* TriangleView.swift */; };
-		EC7BDA421FA411CB00E8F1C1 /* TriangleLengthsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA411FA411CB00E8F1C1 /* TriangleLengthsView.swift */; };
-		EC7BDA441FA411E100E8F1C1 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA431FA411E100E8F1C1 /* Triangle.swift */; };
-		EC7BDA461FA411FA00E8F1C1 /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA451FA411FA00E8F1C1 /* Length.swift */; };
-		EC7BDA481FA4122100E8F1C1 /* TriangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC7BDA471FA4122100E8F1C1 /* TriangleCell.swift */; };
+		C35F04271FA8B9BE00773089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04261FA8B9BE00773089 /* AppDelegate.swift */; };
+		C35F04291FA8B9BE00773089 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04281FA8B9BE00773089 /* ViewController.swift */; };
+		C35F042C1FA8B9BE00773089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35F042A1FA8B9BE00773089 /* Main.storyboard */; };
+		C35F042E1FA8B9BE00773089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35F042D1FA8B9BE00773089 /* Assets.xcassets */; };
+		C35F04311FA8B9BE00773089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35F042F1FA8B9BE00773089 /* LaunchScreen.storyboard */; };
+		C35F043C1FA8B9BE00773089 /* carpentersquareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F043B1FA8B9BE00773089 /* carpentersquareTests.swift */; };
+		C35F04471FA8B9BE00773089 /* carpentersquareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04461FA8B9BE00773089 /* carpentersquareUITests.swift */; };
+		C35F04551FA8BA3300773089 /* TriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04541FA8BA3300773089 /* TriangleView.swift */; };
+		C35F04571FA8BA6B00773089 /* TriangleLengthsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04561FA8BA6B00773089 /* TriangleLengthsView.swift */; };
+		C35F04591FA8BB0200773089 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04581FA8BB0200773089 /* Triangle.swift */; };
+		C35F045B1FA8BB1700773089 /* Length.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F045A1FA8BB1700773089 /* Length.swift */; };
+		C35F045D1FA8BB6300773089 /* TriangleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F045C1FA8BB6300773089 /* TriangleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		EC7BDA101FA39A7000E8F1C1 /* PBXContainerItemProxy */ = {
+		C35F04381FA8B9BE00773089 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EC7BD9F31FA39A6F00E8F1C1 /* Project object */;
+			containerPortal = C35F041B1FA8B9BE00773089 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC7BD9FA1FA39A6F00E8F1C1;
-			remoteInfo = RightAngleCalculator;
+			remoteGlobalIDString = C35F04221FA8B9BE00773089;
+			remoteInfo = carpentersquare;
 		};
-		EC7BDA1B1FA39A7000E8F1C1 /* PBXContainerItemProxy */ = {
+		C35F04431FA8B9BE00773089 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = EC7BD9F31FA39A6F00E8F1C1 /* Project object */;
+			containerPortal = C35F041B1FA8B9BE00773089 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = EC7BD9FA1FA39A6F00E8F1C1;
-			remoteInfo = RightAngleCalculator;
+			remoteGlobalIDString = C35F04221FA8B9BE00773089;
+			remoteInfo = carpentersquare;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EC7BD9FB1FA39A6F00E8F1C1 /* CarpenterSquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarpenterSquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC7BD9FE1FA39A6F00E8F1C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC7BDA001FA39A6F00E8F1C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC7BDA031FA39A6F00E8F1C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EC7BDA051FA39A6F00E8F1C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		EC7BDA081FA39A6F00E8F1C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		EC7BDA0A1FA39A6F00E8F1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC7BDA0F1FA39A7000E8F1C1 /* CarpenterSquareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarpenterSquareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC7BDA131FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightAngleCalculatorTests.swift; sourceTree = "<group>"; };
-		EC7BDA151FA39A7000E8F1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC7BDA1A1FA39A7000E8F1C1 /* CarpenterSquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CarpenterSquareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC7BDA1E1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightAngleCalculatorUITests.swift; sourceTree = "<group>"; };
-		EC7BDA201FA39A7000E8F1C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC7BDA3F1FA411A200E8F1C1 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
-		EC7BDA411FA411CB00E8F1C1 /* TriangleLengthsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleLengthsView.swift; sourceTree = "<group>"; };
-		EC7BDA431FA411E100E8F1C1 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
-		EC7BDA451FA411FA00E8F1C1 /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
-		EC7BDA471FA4122100E8F1C1 /* TriangleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleCell.swift; sourceTree = "<group>"; };
+		C35F04231FA8B9BE00773089 /* carpentersquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carpentersquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35F04261FA8B9BE00773089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C35F04281FA8B9BE00773089 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C35F042B1FA8B9BE00773089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C35F042D1FA8B9BE00773089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C35F04301FA8B9BE00773089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C35F04321FA8B9BE00773089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C35F04371FA8B9BE00773089 /* carpentersquareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carpentersquareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35F043B1FA8B9BE00773089 /* carpentersquareTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carpentersquareTests.swift; sourceTree = "<group>"; };
+		C35F043D1FA8B9BE00773089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C35F04421FA8B9BE00773089 /* carpentersquareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carpentersquareUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C35F04461FA8B9BE00773089 /* carpentersquareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = carpentersquareUITests.swift; sourceTree = "<group>"; };
+		C35F04481FA8B9BE00773089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C35F04541FA8BA3300773089 /* TriangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleView.swift; sourceTree = "<group>"; };
+		C35F04561FA8BA6B00773089 /* TriangleLengthsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleLengthsView.swift; sourceTree = "<group>"; };
+		C35F04581FA8BB0200773089 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
+		C35F045A1FA8BB1700773089 /* Length.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Length.swift; sourceTree = "<group>"; };
+		C35F045C1FA8BB6300773089 /* TriangleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EC7BD9F81FA39A6F00E8F1C1 /* Frameworks */ = {
+		C35F04201FA8B9BE00773089 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC7BDA0C1FA39A7000E8F1C1 /* Frameworks */ = {
+		C35F04341FA8B9BE00773089 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC7BDA171FA39A7000E8F1C1 /* Frameworks */ = {
+		C35F043F1FA8B9BE00773089 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -84,145 +84,145 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC7BD9F21FA39A6F00E8F1C1 = {
+		C35F041A1FA8B9BE00773089 = {
 			isa = PBXGroup;
 			children = (
-				EC7BD9FD1FA39A6F00E8F1C1 /* CarpenterSquare */,
-				EC7BDA121FA39A7000E8F1C1 /* RightAngleCalculatorTests */,
-				EC7BDA1D1FA39A7000E8F1C1 /* RightAngleCalculatorUITests */,
-				EC7BD9FC1FA39A6F00E8F1C1 /* Products */,
+				C35F04251FA8B9BE00773089 /* carpentersquare */,
+				C35F043A1FA8B9BE00773089 /* carpentersquareTests */,
+				C35F04451FA8B9BE00773089 /* carpentersquareUITests */,
+				C35F04241FA8B9BE00773089 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EC7BD9FC1FA39A6F00E8F1C1 /* Products */ = {
+		C35F04241FA8B9BE00773089 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EC7BD9FB1FA39A6F00E8F1C1 /* CarpenterSquare.app */,
-				EC7BDA0F1FA39A7000E8F1C1 /* CarpenterSquareTests.xctest */,
-				EC7BDA1A1FA39A7000E8F1C1 /* CarpenterSquareUITests.xctest */,
+				C35F04231FA8B9BE00773089 /* carpentersquare.app */,
+				C35F04371FA8B9BE00773089 /* carpentersquareTests.xctest */,
+				C35F04421FA8B9BE00773089 /* carpentersquareUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EC7BD9FD1FA39A6F00E8F1C1 /* CarpenterSquare */ = {
+		C35F04251FA8B9BE00773089 /* carpentersquare */ = {
 			isa = PBXGroup;
 			children = (
-				EC7BD9FE1FA39A6F00E8F1C1 /* AppDelegate.swift */,
-				EC7BDA001FA39A6F00E8F1C1 /* ViewController.swift */,
-				EC7BDA3F1FA411A200E8F1C1 /* TriangleView.swift */,
-				EC7BDA411FA411CB00E8F1C1 /* TriangleLengthsView.swift */,
-				EC7BDA431FA411E100E8F1C1 /* Triangle.swift */,
-				EC7BDA451FA411FA00E8F1C1 /* Length.swift */,
-				EC7BDA471FA4122100E8F1C1 /* TriangleCell.swift */,
-				EC7BDA021FA39A6F00E8F1C1 /* Main.storyboard */,
-				EC7BDA051FA39A6F00E8F1C1 /* Assets.xcassets */,
-				EC7BDA071FA39A6F00E8F1C1 /* LaunchScreen.storyboard */,
-				EC7BDA0A1FA39A6F00E8F1C1 /* Info.plist */,
+				C35F04261FA8B9BE00773089 /* AppDelegate.swift */,
+				C35F04281FA8B9BE00773089 /* ViewController.swift */,
+				C35F04541FA8BA3300773089 /* TriangleView.swift */,
+				C35F04561FA8BA6B00773089 /* TriangleLengthsView.swift */,
+				C35F04581FA8BB0200773089 /* Triangle.swift */,
+				C35F045A1FA8BB1700773089 /* Length.swift */,
+				C35F045C1FA8BB6300773089 /* TriangleCell.swift */,
+				C35F042A1FA8B9BE00773089 /* Main.storyboard */,
+				C35F042D1FA8B9BE00773089 /* Assets.xcassets */,
+				C35F042F1FA8B9BE00773089 /* LaunchScreen.storyboard */,
+				C35F04321FA8B9BE00773089 /* Info.plist */,
 			);
-			path = CarpenterSquare;
+			path = carpentersquare;
 			sourceTree = "<group>";
 		};
-		EC7BDA121FA39A7000E8F1C1 /* RightAngleCalculatorTests */ = {
+		C35F043A1FA8B9BE00773089 /* carpentersquareTests */ = {
 			isa = PBXGroup;
 			children = (
-				EC7BDA131FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift */,
-				EC7BDA151FA39A7000E8F1C1 /* Info.plist */,
+				C35F043B1FA8B9BE00773089 /* carpentersquareTests.swift */,
+				C35F043D1FA8B9BE00773089 /* Info.plist */,
 			);
-			path = RightAngleCalculatorTests;
+			path = carpentersquareTests;
 			sourceTree = "<group>";
 		};
-		EC7BDA1D1FA39A7000E8F1C1 /* RightAngleCalculatorUITests */ = {
+		C35F04451FA8B9BE00773089 /* carpentersquareUITests */ = {
 			isa = PBXGroup;
 			children = (
-				EC7BDA1E1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift */,
-				EC7BDA201FA39A7000E8F1C1 /* Info.plist */,
+				C35F04461FA8B9BE00773089 /* carpentersquareUITests.swift */,
+				C35F04481FA8B9BE00773089 /* Info.plist */,
 			);
-			path = RightAngleCalculatorUITests;
+			path = carpentersquareUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EC7BD9FA1FA39A6F00E8F1C1 /* CarpenterSquare */ = {
+		C35F04221FA8B9BE00773089 /* carpentersquare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC7BDA231FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquare" */;
+			buildConfigurationList = C35F044B1FA8B9BE00773089 /* Build configuration list for PBXNativeTarget "carpentersquare" */;
 			buildPhases = (
-				EC7BD9F71FA39A6F00E8F1C1 /* Sources */,
-				EC7BD9F81FA39A6F00E8F1C1 /* Frameworks */,
-				EC7BD9F91FA39A6F00E8F1C1 /* Resources */,
+				C35F041F1FA8B9BE00773089 /* Sources */,
+				C35F04201FA8B9BE00773089 /* Frameworks */,
+				C35F04211FA8B9BE00773089 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = CarpenterSquare;
-			productName = RightAngleCalculator;
-			productReference = EC7BD9FB1FA39A6F00E8F1C1 /* CarpenterSquare.app */;
+			name = carpentersquare;
+			productName = carpentersquare;
+			productReference = C35F04231FA8B9BE00773089 /* carpentersquare.app */;
 			productType = "com.apple.product-type.application";
 		};
-		EC7BDA0E1FA39A7000E8F1C1 /* CarpenterSquareTests */ = {
+		C35F04361FA8B9BE00773089 /* carpentersquareTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC7BDA261FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquareTests" */;
+			buildConfigurationList = C35F044E1FA8B9BE00773089 /* Build configuration list for PBXNativeTarget "carpentersquareTests" */;
 			buildPhases = (
-				EC7BDA0B1FA39A7000E8F1C1 /* Sources */,
-				EC7BDA0C1FA39A7000E8F1C1 /* Frameworks */,
-				EC7BDA0D1FA39A7000E8F1C1 /* Resources */,
+				C35F04331FA8B9BE00773089 /* Sources */,
+				C35F04341FA8B9BE00773089 /* Frameworks */,
+				C35F04351FA8B9BE00773089 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC7BDA111FA39A7000E8F1C1 /* PBXTargetDependency */,
+				C35F04391FA8B9BE00773089 /* PBXTargetDependency */,
 			);
-			name = CarpenterSquareTests;
-			productName = RightAngleCalculatorTests;
-			productReference = EC7BDA0F1FA39A7000E8F1C1 /* CarpenterSquareTests.xctest */;
+			name = carpentersquareTests;
+			productName = carpentersquareTests;
+			productReference = C35F04371FA8B9BE00773089 /* carpentersquareTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EC7BDA191FA39A7000E8F1C1 /* CarpenterSquareUITests */ = {
+		C35F04411FA8B9BE00773089 /* carpentersquareUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EC7BDA291FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquareUITests" */;
+			buildConfigurationList = C35F04511FA8B9BE00773089 /* Build configuration list for PBXNativeTarget "carpentersquareUITests" */;
 			buildPhases = (
-				EC7BDA161FA39A7000E8F1C1 /* Sources */,
-				EC7BDA171FA39A7000E8F1C1 /* Frameworks */,
-				EC7BDA181FA39A7000E8F1C1 /* Resources */,
+				C35F043E1FA8B9BE00773089 /* Sources */,
+				C35F043F1FA8B9BE00773089 /* Frameworks */,
+				C35F04401FA8B9BE00773089 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EC7BDA1C1FA39A7000E8F1C1 /* PBXTargetDependency */,
+				C35F04441FA8B9BE00773089 /* PBXTargetDependency */,
 			);
-			name = CarpenterSquareUITests;
-			productName = RightAngleCalculatorUITests;
-			productReference = EC7BDA1A1FA39A7000E8F1C1 /* CarpenterSquareUITests.xctest */;
+			name = carpentersquareUITests;
+			productName = carpentersquareUITests;
+			productReference = C35F04421FA8B9BE00773089 /* carpentersquareUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EC7BD9F31FA39A6F00E8F1C1 /* Project object */ = {
+		C35F041B1FA8B9BE00773089 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
-				ORGANIZATIONNAME = ShenYang;
+				ORGANIZATIONNAME = RedShepard;
 				TargetAttributes = {
-					EC7BD9FA1FA39A6F00E8F1C1 = {
-						CreatedOnToolsVersion = 9.0;
+					C35F04221FA8B9BE00773089 = {
+						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
-					EC7BDA0E1FA39A7000E8F1C1 = {
-						CreatedOnToolsVersion = 9.0;
+					C35F04361FA8B9BE00773089 = {
+						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = EC7BD9FA1FA39A6F00E8F1C1;
+						TestTargetID = C35F04221FA8B9BE00773089;
 					};
-					EC7BDA191FA39A7000E8F1C1 = {
-						CreatedOnToolsVersion = 9.0;
+					C35F04411FA8B9BE00773089 = {
+						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = EC7BD9FA1FA39A6F00E8F1C1;
+						TestTargetID = C35F04221FA8B9BE00773089;
 					};
 				};
 			};
-			buildConfigurationList = EC7BD9F61FA39A6F00E8F1C1 /* Build configuration list for PBXProject "CarpenterSquare" */;
+			buildConfigurationList = C35F041E1FA8B9BE00773089 /* Build configuration list for PBXProject "carpentersquare" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -230,37 +230,37 @@
 				en,
 				Base,
 			);
-			mainGroup = EC7BD9F21FA39A6F00E8F1C1;
-			productRefGroup = EC7BD9FC1FA39A6F00E8F1C1 /* Products */;
+			mainGroup = C35F041A1FA8B9BE00773089;
+			productRefGroup = C35F04241FA8B9BE00773089 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC7BD9FA1FA39A6F00E8F1C1 /* CarpenterSquare */,
-				EC7BDA0E1FA39A7000E8F1C1 /* CarpenterSquareTests */,
-				EC7BDA191FA39A7000E8F1C1 /* CarpenterSquareUITests */,
+				C35F04221FA8B9BE00773089 /* carpentersquare */,
+				C35F04361FA8B9BE00773089 /* carpentersquareTests */,
+				C35F04411FA8B9BE00773089 /* carpentersquareUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EC7BD9F91FA39A6F00E8F1C1 /* Resources */ = {
+		C35F04211FA8B9BE00773089 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7BDA091FA39A6F00E8F1C1 /* LaunchScreen.storyboard in Resources */,
-				EC7BDA061FA39A6F00E8F1C1 /* Assets.xcassets in Resources */,
-				EC7BDA041FA39A6F00E8F1C1 /* Main.storyboard in Resources */,
+				C35F04311FA8B9BE00773089 /* LaunchScreen.storyboard in Resources */,
+				C35F042E1FA8B9BE00773089 /* Assets.xcassets in Resources */,
+				C35F042C1FA8B9BE00773089 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC7BDA0D1FA39A7000E8F1C1 /* Resources */ = {
+		C35F04351FA8B9BE00773089 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC7BDA181FA39A7000E8F1C1 /* Resources */ = {
+		C35F04401FA8B9BE00773089 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -270,64 +270,64 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EC7BD9F71FA39A6F00E8F1C1 /* Sources */ = {
+		C35F041F1FA8B9BE00773089 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7BDA011FA39A6F00E8F1C1 /* ViewController.swift in Sources */,
-				EC7BDA461FA411FA00E8F1C1 /* Length.swift in Sources */,
-				EC7BDA481FA4122100E8F1C1 /* TriangleCell.swift in Sources */,
-				EC7BDA401FA411A200E8F1C1 /* TriangleView.swift in Sources */,
-				EC7BDA441FA411E100E8F1C1 /* Triangle.swift in Sources */,
-				EC7BDA421FA411CB00E8F1C1 /* TriangleLengthsView.swift in Sources */,
-				EC7BD9FF1FA39A6F00E8F1C1 /* AppDelegate.swift in Sources */,
+				C35F04291FA8B9BE00773089 /* ViewController.swift in Sources */,
+				C35F045B1FA8BB1700773089 /* Length.swift in Sources */,
+				C35F045D1FA8BB6300773089 /* TriangleCell.swift in Sources */,
+				C35F04551FA8BA3300773089 /* TriangleView.swift in Sources */,
+				C35F04591FA8BB0200773089 /* Triangle.swift in Sources */,
+				C35F04571FA8BA6B00773089 /* TriangleLengthsView.swift in Sources */,
+				C35F04271FA8B9BE00773089 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC7BDA0B1FA39A7000E8F1C1 /* Sources */ = {
+		C35F04331FA8B9BE00773089 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7BDA141FA39A7000E8F1C1 /* RightAngleCalculatorTests.swift in Sources */,
+				C35F043C1FA8B9BE00773089 /* carpentersquareTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC7BDA161FA39A7000E8F1C1 /* Sources */ = {
+		C35F043E1FA8B9BE00773089 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC7BDA1F1FA39A7000E8F1C1 /* RightAngleCalculatorUITests.swift in Sources */,
+				C35F04471FA8B9BE00773089 /* carpentersquareUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		EC7BDA111FA39A7000E8F1C1 /* PBXTargetDependency */ = {
+		C35F04391FA8B9BE00773089 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC7BD9FA1FA39A6F00E8F1C1 /* CarpenterSquare */;
-			targetProxy = EC7BDA101FA39A7000E8F1C1 /* PBXContainerItemProxy */;
+			target = C35F04221FA8B9BE00773089 /* carpentersquare */;
+			targetProxy = C35F04381FA8B9BE00773089 /* PBXContainerItemProxy */;
 		};
-		EC7BDA1C1FA39A7000E8F1C1 /* PBXTargetDependency */ = {
+		C35F04441FA8B9BE00773089 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = EC7BD9FA1FA39A6F00E8F1C1 /* CarpenterSquare */;
-			targetProxy = EC7BDA1B1FA39A7000E8F1C1 /* PBXContainerItemProxy */;
+			target = C35F04221FA8B9BE00773089 /* carpentersquare */;
+			targetProxy = C35F04431FA8B9BE00773089 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC7BDA021FA39A6F00E8F1C1 /* Main.storyboard */ = {
+		C35F042A1FA8B9BE00773089 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EC7BDA031FA39A6F00E8F1C1 /* Base */,
+				C35F042B1FA8B9BE00773089 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		EC7BDA071FA39A6F00E8F1C1 /* LaunchScreen.storyboard */ = {
+		C35F042F1FA8B9BE00773089 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EC7BDA081FA39A6F00E8F1C1 /* Base */,
+				C35F04301FA8B9BE00773089 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -335,7 +335,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		EC7BDA211FA39A7000E8F1C1 /* Debug */ = {
+		C35F04491FA8B9BE00773089 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -392,7 +392,7 @@
 			};
 			name = Debug;
 		};
-		EC7BDA221FA39A7000E8F1C1 /* Release */ = {
+		C35F044A1FA8B9BE00773089 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -442,138 +442,144 @@
 			};
 			name = Release;
 		};
-		EC7BDA241FA39A7000E8F1C1 /* Debug */ = {
+		C35F044C1FA8B9BE00773089 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2484854MT5;
-				INFOPLIST_FILE = CarpenterSquare/Info.plist;
+				INFOPLIST_FILE = carpentersquare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
-		EC7BDA251FA39A7000E8F1C1 /* Release */ = {
+		C35F044D1FA8B9BE00773089 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2484854MT5;
-				INFOPLIST_FILE = CarpenterSquare/Info.plist;
+				INFOPLIST_FILE = carpentersquare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
-		EC7BDA271FA39A7000E8F1C1 /* Debug */ = {
+		C35F044F1FA8B9BE00773089 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RightAngleCalculatorTests/Info.plist;
+				DEVELOPMENT_TEAM = 2484854MT5;
+				INFOPLIST_FILE = carpentersquareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculatorTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarpenterSquare.app/CarpenterSquare";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/carpentersquare.app/carpentersquare";
 			};
 			name = Debug;
 		};
-		EC7BDA281FA39A7000E8F1C1 /* Release */ = {
+		C35F04501FA8B9BE00773089 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RightAngleCalculatorTests/Info.plist;
+				DEVELOPMENT_TEAM = 2484854MT5;
+				INFOPLIST_FILE = carpentersquareTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculatorTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquareTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CarpenterSquare.app/CarpenterSquare";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/carpentersquare.app/carpentersquare";
 			};
 			name = Release;
 		};
-		EC7BDA2A1FA39A7000E8F1C1 /* Debug */ = {
+		C35F04521FA8B9BE00773089 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RightAngleCalculatorUITests/Info.plist;
+				DEVELOPMENT_TEAM = 2484854MT5;
+				INFOPLIST_FILE = carpentersquareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculatorUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquareUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RightAngleCalculator;
+				TEST_TARGET_NAME = carpentersquare;
 			};
 			name = Debug;
 		};
-		EC7BDA2B1FA39A7000E8F1C1 /* Release */ = {
+		C35F04531FA8B9BE00773089 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RightAngleCalculatorUITests/Info.plist;
+				DEVELOPMENT_TEAM = 2484854MT5;
+				INFOPLIST_FILE = carpentersquareUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ShenYang.RightAngleCalculatorUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquareUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RightAngleCalculator;
+				TEST_TARGET_NAME = carpentersquare;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EC7BD9F61FA39A6F00E8F1C1 /* Build configuration list for PBXProject "CarpenterSquare" */ = {
+		C35F041E1FA8B9BE00773089 /* Build configuration list for PBXProject "carpentersquare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC7BDA211FA39A7000E8F1C1 /* Debug */,
-				EC7BDA221FA39A7000E8F1C1 /* Release */,
+				C35F04491FA8B9BE00773089 /* Debug */,
+				C35F044A1FA8B9BE00773089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC7BDA231FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquare" */ = {
+		C35F044B1FA8B9BE00773089 /* Build configuration list for PBXNativeTarget "carpentersquare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC7BDA241FA39A7000E8F1C1 /* Debug */,
-				EC7BDA251FA39A7000E8F1C1 /* Release */,
+				C35F044C1FA8B9BE00773089 /* Debug */,
+				C35F044D1FA8B9BE00773089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC7BDA261FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquareTests" */ = {
+		C35F044E1FA8B9BE00773089 /* Build configuration list for PBXNativeTarget "carpentersquareTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC7BDA271FA39A7000E8F1C1 /* Debug */,
-				EC7BDA281FA39A7000E8F1C1 /* Release */,
+				C35F044F1FA8B9BE00773089 /* Debug */,
+				C35F04501FA8B9BE00773089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EC7BDA291FA39A7000E8F1C1 /* Build configuration list for PBXNativeTarget "CarpenterSquareUITests" */ = {
+		C35F04511FA8B9BE00773089 /* Build configuration list for PBXNativeTarget "carpentersquareUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC7BDA2A1FA39A7000E8F1C1 /* Debug */,
-				EC7BDA2B1FA39A7000E8F1C1 /* Release */,
+				C35F04521FA8B9BE00773089 /* Debug */,
+				C35F04531FA8B9BE00773089 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EC7BD9F31FA39A6F00E8F1C1 /* Project object */;
+	rootObject = C35F041B1FA8B9BE00773089 /* Project object */;
 }

@@ -1,8 +1,9 @@
 //
 //  AppDelegate.swift
-//  RightAngleCalculator
+//  carpentersquare
 //
-//  Created by admin on 10/27/17.
+//  Created by Administrator on 10/31/17.
+//  Copyright © 2017 RedShepard. All rights reserved.
 //
 
 import UIKit

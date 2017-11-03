@@ -1,8 +1,9 @@
 //
 //  TriangleCell.swift
-//  RightAngleCalculator
+//  carpentersquare
 //
-//  Created by admin on 10/27/17.
+//  Created by Administrator on 10/31/17.
+//  Copyright © 2017 RedShepard. All rights reserved.
 //
 
 import UIKit
@@ -22,7 +23,7 @@ class TriangleCell : UITableViewCell{
         
         // Configure the view for the selected state
     }
-
+    
     init(style:UITableViewCellStyle, reuseIdentifier:String){
         
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -68,5 +69,4 @@ class TriangleCell : UITableViewCell{
         fatalError("init(coder:) has not been implemented")
     }
 }
-
 
