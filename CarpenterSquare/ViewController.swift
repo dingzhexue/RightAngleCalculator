@@ -79,7 +79,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     
     override func viewDidAppear(_ animated: Bool) {
         if #available(iOS 11.0, *) {
-            self.navigationController?.navigationBar.prefersLargeTitles = false
+            self.navigationController?.navigationBar.prefersLargeTitles = true
 //            self.navigationController?.navigationBar.largeTitleTextAttributes =
 //            [NSAttributedStringKey.foregroundColor: UIColor.blue, NSAttributedStringKey.font: UIFont(name: "Papyrus", size: 20) ?? UIFont.systemFont(ofSize: 20)]
         } else {
@@ -230,7 +230,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         
         
         // Determine origin for triangle
-        let vSpace:Float = Float(previousTrianglesView.frame.origin.y) + Float(previousTrianglesView.frame.size.height/10)
+        let vSpace:Float = Float(previousTrianglesView.frame.origin.y)*2/3 + Float(previousTrianglesView.frame.size.height/10)
         let hSpace:Float = Float(previousTrianglesView.frame.size.width)
         let origin:CGPoint = CGPoint(x:Double(hSpace)/2.0 - mainTriangle.legB*scale/3.0,
                                      y:Double(vSpace)*2.0 + mainTriangle.legA*scale/2.0)
@@ -555,7 +555,12 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.previousTrianglesView.isHidden = true
         self.calculateButton.isHidden = true
         self.clearButton.isHidden = true
-        self.CViewBottom.constant = 160
+        let con = 180 * (previousTrianglesView.frame.size.width / 320) * ( 568 / self.view.frame.size.height)
+        if con > 200 {
+            self.CViewBottom.constant = 145
+        }else {
+            self.CViewBottom.constant = con
+        }
         
     }
     
@@ -563,7 +568,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.previousTrianglesView.isHidden = false
         self.calculateButton.isHidden = false
         self.clearButton.isHidden = false
-        self.CViewBottom.constant = 30
+        self.CViewBottom.constant = 11
         
     }
 }
