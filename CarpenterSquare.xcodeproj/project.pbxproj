@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9C055F51FAD97D2002D1707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C055F41FAD978F002D1707 /* Assets.xcassets */; };
 		C35F04271FA8B9BE00773089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04261FA8B9BE00773089 /* AppDelegate.swift */; };
 		C35F04291FA8B9BE00773089 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04281FA8B9BE00773089 /* ViewController.swift */; };
 		C35F042C1FA8B9BE00773089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35F042A1FA8B9BE00773089 /* Main.storyboard */; };
-		C35F042E1FA8B9BE00773089 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C35F042D1FA8B9BE00773089 /* Assets.xcassets */; };
 		C35F04311FA8B9BE00773089 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35F042F1FA8B9BE00773089 /* LaunchScreen.storyboard */; };
 		C35F043C1FA8B9BE00773089 /* carpentersquareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F043B1FA8B9BE00773089 /* carpentersquareTests.swift */; };
 		C35F04471FA8B9BE00773089 /* carpentersquareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04461FA8B9BE00773089 /* carpentersquareUITests.swift */; };
@@ -39,11 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9C055F41FAD978F002D1707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CarpenterSquare/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		C35F04231FA8B9BE00773089 /* carpentersquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carpentersquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35F04261FA8B9BE00773089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35F04281FA8B9BE00773089 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C35F042B1FA8B9BE00773089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C35F042D1FA8B9BE00773089 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C35F04301FA8B9BE00773089 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C35F04321FA8B9BE00773089 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C35F04371FA8B9BE00773089 /* carpentersquareTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = carpentersquareTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,7 +115,7 @@
 				C35F045A1FA8BB1700773089 /* Length.swift */,
 				C35F045C1FA8BB6300773089 /* TriangleCell.swift */,
 				C35F042A1FA8B9BE00773089 /* Main.storyboard */,
-				C35F042D1FA8B9BE00773089 /* Assets.xcassets */,
+				B9C055F41FAD978F002D1707 /* Assets.xcassets */,
 				C35F042F1FA8B9BE00773089 /* LaunchScreen.storyboard */,
 				C35F04321FA8B9BE00773089 /* Info.plist */,
 			);
@@ -222,7 +222,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C35F041E1FA8B9BE00773089 /* Build configuration list for PBXProject "carpentersquare" */;
+			buildConfigurationList = C35F041E1FA8B9BE00773089 /* Build configuration list for PBXProject "CarpenterSquare" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -247,8 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9C055F51FAD97D2002D1707 /* Assets.xcassets in Resources */,
 				C35F04311FA8B9BE00773089 /* LaunchScreen.storyboard in Resources */,
-				C35F042E1FA8B9BE00773089 /* Assets.xcassets in Resources */,
 				C35F042C1FA8B9BE00773089 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +449,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2484854MT5;
 				INFOPLIST_FILE = carpentersquare/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -465,7 +465,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2484854MT5;
 				INFOPLIST_FILE = carpentersquare/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.redshepard.carpentersquare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -543,7 +543,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C35F041E1FA8B9BE00773089 /* Build configuration list for PBXProject "carpentersquare" */ = {
+		C35F041E1FA8B9BE00773089 /* Build configuration list for PBXProject "CarpenterSquare" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C35F04491FA8B9BE00773089 /* Debug */,
