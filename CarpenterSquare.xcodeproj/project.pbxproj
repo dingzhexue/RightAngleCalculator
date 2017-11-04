@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B9C055F51FAD97D2002D1707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9C055F41FAD978F002D1707 /* Assets.xcassets */; };
+		B9C489D71FADC61C00246D9E /* TriangleCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C489D61FADC61B00246D9E /* TriangleCustomCell.swift */; };
 		C35F04271FA8B9BE00773089 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04261FA8B9BE00773089 /* AppDelegate.swift */; };
 		C35F04291FA8B9BE00773089 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35F04281FA8B9BE00773089 /* ViewController.swift */; };
 		C35F042C1FA8B9BE00773089 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C35F042A1FA8B9BE00773089 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		B9C055F41FAD978F002D1707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CarpenterSquare/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		B9C489D61FADC61B00246D9E /* TriangleCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriangleCustomCell.swift; path = CarpenterSquare/TriangleCustomCell.swift; sourceTree = SOURCE_ROOT; };
 		C35F04231FA8B9BE00773089 /* carpentersquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = carpentersquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C35F04261FA8B9BE00773089 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C35F04281FA8B9BE00773089 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 		C35F04251FA8B9BE00773089 /* carpentersquare */ = {
 			isa = PBXGroup;
 			children = (
+				B9C489D61FADC61B00246D9E /* TriangleCustomCell.swift */,
 				C35F04261FA8B9BE00773089 /* AppDelegate.swift */,
 				C35F04281FA8B9BE00773089 /* ViewController.swift */,
 				C35F04541FA8BA3300773089 /* TriangleView.swift */,
@@ -280,6 +283,7 @@
 				C35F04551FA8BA3300773089 /* TriangleView.swift in Sources */,
 				C35F04591FA8BB0200773089 /* Triangle.swift in Sources */,
 				C35F04571FA8BA6B00773089 /* TriangleLengthsView.swift in Sources */,
+				B9C489D71FADC61C00246D9E /* TriangleCustomCell.swift in Sources */,
 				C35F04271FA8B9BE00773089 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

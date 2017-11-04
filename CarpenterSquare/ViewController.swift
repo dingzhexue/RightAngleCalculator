@@ -73,16 +73,20 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         
         tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        
+        self.previousTableView.rowHeight = self.previousTableView.frame.size.height/7
+        //self.previousTableView.register(TriangleCustomCell.self, forCellReuseIdentifier: "cell")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         if #available(iOS 11.0, *) {
             self.navigationController?.navigationBar.prefersLargeTitles = false
+//            self.navigationController?.navigationBar.largeTitleTextAttributes =
+//            [NSAttributedStringKey.foregroundColor: UIColor.blue, NSAttributedStringKey.font: UIFont(name: "Papyrus", size: 20) ?? UIFont.systemFont(ofSize: 20)]
         } else {
             // Fallback on earlier versions
         }
-        self.previousTableView.rowHeight = 35
+        self.previousTableView.rowHeight = self.previousTableView.frame.size.height/7
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -226,7 +230,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         
         
         // Determine origin for triangle
-        let vSpace:Float = Float(previousTrianglesView.frame.origin.y) + Float(previousTrianglesView.frame.size.height/11)
+        let vSpace:Float = Float(previousTrianglesView.frame.origin.y) + Float(previousTrianglesView.frame.size.height/10)
         let hSpace:Float = Float(previousTrianglesView.frame.size.width)
         let origin:CGPoint = CGPoint(x:Double(hSpace)/2.0 - mainTriangle.legB*scale/3.0,
                                      y:Double(vSpace)*2.0 + mainTriangle.legA*scale/2.0)
@@ -390,16 +394,17 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 35
+        return tableView.frame.size.height/7
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = TriangleCell(style: .default, reuseIdentifier: "")
+        let cell = TriangleCell(style: .default, reuseIdentifier: "",viewWidth: tableView.frame.size.width,viewHeight:tableView.rowHeight)
         let t = previousTriangles[indexPath.row]
         let length = Length()
         cell.aLabel.text = String(format:"A: %@",length.formattedStringForFeet(feet: t.legA))
         cell.bLabel.text = String(format:"B: %@",length.formattedStringForFeet(feet: t.legB))
         cell.cLabel.text = String(format:"C: %@",length.formattedStringForFeet(feet: t.hypotenuse))
+        
         
         return cell
     }
@@ -550,7 +555,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.previousTrianglesView.isHidden = true
         self.calculateButton.isHidden = true
         self.clearButton.isHidden = true
-        self.CViewBottom.constant = 190
+        self.CViewBottom.constant = 160
         
     }
     
