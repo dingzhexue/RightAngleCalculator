@@ -18,6 +18,11 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     @IBOutlet weak var legAInches: UITextField!
     @IBOutlet weak var legASixteenths: UITextField!
     
+    @IBOutlet weak var topa: NSLayoutConstraint!
+    @IBOutlet weak var CViewTop: NSLayoutConstraint!
+    
+    @IBOutlet weak var navItem: UINavigationItem!
+    @IBOutlet weak var BViewTop: NSLayoutConstraint!
     @IBOutlet weak var bView: UIView!
     @IBOutlet weak var legBFeet: UITextField!
     @IBOutlet weak var legBInches: UITextField!
@@ -32,6 +37,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     @IBOutlet weak var bLabel: UILabel!
     @IBOutlet weak var cLabel: UILabel!
     
+    
     @IBOutlet weak var calculateButton: UIButton!
     @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var previousTrianglesView: UIView!
@@ -39,7 +45,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     @IBOutlet weak var calulatorImage: UIImageView!
     @IBOutlet weak var awaitLabel: UILabel!
     
-    @IBOutlet weak var aViewTop: NSLayoutConstraint!
+    
     
     var triangleView : TriangleView!
     var triangleLengthsView : TriangleLengthsView!
@@ -50,6 +56,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         // Do any additional setup after loading the view, typically from a nib.
         mainTriangle = Triangle()
         
+    
         self.previousTableView.isHidden = true
         self.loadPreviousTriangles()
         self.hideTriangle()
@@ -73,8 +80,8 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.prefersLargeTitles = true
-        self.previousTableView.rowHeight = 35
+        self.navigationController?.navigationBar.prefersLargeTitles = false
+        self.previousTableView.rowHeight = 34
     }
     
     override func didReceiveMemoryWarning() {
@@ -208,7 +215,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
     // Draws triangle currently in mainTriangle
     func drawTriangle(){
         self.showTriangle()
-        let triangleSize:Float = 200
+        let triangleSize:Float! =  Float(previousTrianglesView.frame.size.height * 200/375)
 
         // scale triangle so largest leg has appropriate length
         let largestLegLength:Double = max(mainTriangle.legA,mainTriangle.legB)
@@ -218,8 +225,8 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
        
         
         // Determine origin for triangle
-        let vSpace:Float = Float(previousTrianglesView.frame.origin.y) + 20
-        let hSpace:Float = 375
+        let vSpace:Float = Float(previousTrianglesView.frame.origin.y) + Float(previousTrianglesView.frame.size.height * 88/750)
+        let hSpace:Float = Float(previousTableView.frame.size.width )
         let origin:CGPoint = CGPoint(x:Double(hSpace)/2.0 - mainTriangle.legB*scale/3.0,
                                      y:Double(vSpace)*2.0 + mainTriangle.legA*scale/2.0)
 
@@ -530,7 +537,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.previousTrianglesView.isHidden = true
         self.calculateButton.isHidden = true
         self.clearButton.isHidden = true
-        self.aViewTop.constant = -190
+        self.CViewTop.constant = +190
         
     }
 
@@ -538,7 +545,7 @@ class ViewController: UIViewController,UITextFieldDelegate,UITableViewDelegate,U
         self.previousTrianglesView.isHidden = false
         self.calculateButton.isHidden = false
         self.clearButton.isHidden = false
-        self.aViewTop.constant = 30
+        self.CViewTop.constant = 30
         
     }
 }
